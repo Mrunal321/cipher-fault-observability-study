@@ -1,0 +1,402 @@
+{
+  "circuit": "present_sbox",
+  "flow": "MIG",
+  "fault_site": "new_n12",
+  "fault_def": "MAJ3(pi1, pi2, new_n11)",
+  "downstream": "new_n15",
+  "downstream_def": "MAJ3(new_n10, ~new_n12, new_n14)",
+  "fault_input_polarity_at_h": "complemented",
+  "fanout_of_g": 1,
+  "n_test_vectors": 16,
+  "masking_at_h": 8,
+  "propagating_at_h": 8,
+  "reaching_PO": 8,
+  "dp": 0.5,
+  "theoretical_maj3_masking_probability": 0.5,
+  "trace": [
+    {
+      "vec": 0,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 0,
+        "pi3": 0,
+        "pi4": 0
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 0,
+      "h_faulty": 0,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 1,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 0,
+        "pi3": 0,
+        "pi4": 1
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 0,
+      "h_faulty": 0,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 2,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 0,
+        "pi3": 1,
+        "pi4": 0
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 0,
+      "h_faulty": 0,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 3,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 0,
+        "pi3": 1,
+        "pi4": 1
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 1,
+      "h_faulty": 0,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 4,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 1,
+        "pi3": 0,
+        "pi4": 0
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 1,
+      "h_faulty": 0,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 5,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 1,
+        "pi3": 0,
+        "pi4": 1
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 1,
+      "h_faulty": 0,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 6,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 1,
+        "pi3": 1,
+        "pi4": 0
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 1,
+      "h_faulty": 1,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 7,
+      "inputs": {
+        "pi1": 0,
+        "pi2": 1,
+        "pi3": 1,
+        "pi4": 1
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 0,
+      "h_faulty": 1,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 8,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 0,
+        "pi3": 0,
+        "pi4": 0
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 1,
+      "h_faulty": 0,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 9,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 0,
+        "pi3": 0,
+        "pi4": 1
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 0,
+      "h_faulty": 0,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 10,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 0,
+        "pi3": 1,
+        "pi4": 0
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 0,
+      "h_faulty": 0,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 11,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 0,
+        "pi3": 1,
+        "pi4": 1
+      },
+      "g_correct": 0,
+      "g_faulty": 1,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 1,
+      "h_faulty": 0,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 12,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 1,
+        "pi3": 0,
+        "pi4": 0
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        0
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 0,
+      "h_faulty": 1,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 13,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 1,
+        "pi3": 0,
+        "pi4": 1
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        0
+      ],
+      "other_inputs_agree": false,
+      "h_correct": 0,
+      "h_faulty": 1,
+      "h_flipped": true,
+      "reached_PO": true
+    },
+    {
+      "vec": 14,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 1,
+        "pi3": 1,
+        "pi4": 0
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 1,
+      "h_faulty": 1,
+      "h_flipped": false,
+      "reached_PO": false
+    },
+    {
+      "vec": 15,
+      "inputs": {
+        "pi1": 1,
+        "pi2": 1,
+        "pi3": 1,
+        "pi4": 1
+      },
+      "g_correct": 1,
+      "g_faulty": 0,
+      "h_other_input_0": [
+        "new_n14",
+        1
+      ],
+      "h_other_input_1": [
+        "new_n10",
+        1
+      ],
+      "other_inputs_agree": true,
+      "h_correct": 1,
+      "h_faulty": 1,
+      "h_flipped": false,
+      "reached_PO": false
+    }
+  ]
+}

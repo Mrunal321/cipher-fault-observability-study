@@ -1,0 +1,42 @@
+\begin{table}[t]
+\centering
+\caption{All-site \AvgDP{} change (\%) from AOIG to MIG, by baseline.
+         Sign reversal is consistent within each cipher family.}
+\label{tab:granularity_confound}
+\setlength{\tabcolsep}{4pt}
+\footnotesize
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Family & Circuit & \multicolumn{1}{c}{LUT$\to$MIG} & \multicolumn{1}{c}{AIG$\to$MIG} \\
+\midrule
+\multirow{4}{*}{4-bit S-box}
+  & PRESENT S-box       & $-21.5$ & $+7.6$  \\
+  & GIFT S-box          & $-16.8$ & $+8.3$  \\
+  & PRINCE S-box        & $-23.7$ & $+9.2$  \\
+  & PRINCE S-box$^{-1}$ & $-23.1$ & $+14.5$ \\
+\cmidrule(l){1-4}
+\multirow{3}{*}{Subst.\ round}
+  & GIFT subcells  & $-16.8$ & $+7.8$  \\
+  & GIFT round     & $-16.8$ & $+18.7$ \\
+  & PRESENT round  & $-19.8$ & $+16.7$ \\
+\cmidrule(l){1-4}
+Permutation & PRINCE $M'$    & $-10.0$ & $+20.0$ \\
+\cmidrule(l){1-4}
+\multirow{2}{*}{SIMON}
+  & SIMON-32 & $-11.1$ & $+47.7$ \\
+  & SIMON-64 & $-11.1$ & $+47.7$ \\
+\cmidrule(l){1-4}
+\multirow{2}{*}{Keccak-$\chi$}
+  & 5-bit    & $+8.0$ & $+11.7$ \\
+  & 64-row   & $+8.0$ & $+11.7$ \\
+\cmidrule(l){1-4}
+\multirow{3}{*}{ARX}
+  & SpecKey  & $-13.9$ & $+38.1$ \\
+  & Speck-32 & $-12.5$ & $+24.0$ \\
+  & MARX-2   & $-13.8$ & $+37.9$ \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Mean (all 15)}}
+  & $\mathbf{-13.0}$ & $\mathbf{+21.4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
