@@ -36,7 +36,7 @@ python3 -m pip install -r requirements.txt
 ./reproduce.sh
 ```
 
-By default, `reproduce.sh` recomputes the summary files from the frozen BLIFs and JSONs. Use `./reproduce.sh --full` to rerun the full fault campaign and AIG-control checks. The full mode can take longer and requires `yosys` for AIG regeneration.
+By default, `reproduce.sh` reruns the active experiment workflow. It can take longer and requires `yosys` for AIG regeneration. Use `./reproduce.sh --quick` for a fast summary-only check from frozen JSONs.
 
 ## Key Commands
 

@@ -26,10 +26,10 @@ Vivado 2023.2 is required only if you want to rerun FPGA implementation metrics 
 ./reproduce.sh
 ```
 
-For a full recomputation of the fault campaign and AIG control:
+For a fast summary-only check from frozen JSONs:
 
 ```bash
-./reproduce.sh --full
+./reproduce.sh --quick
 ```
 
-Full mode is slower and expects `yosys` on `PATH`.
+The default workflow is slower and expects `yosys` on `PATH`.
