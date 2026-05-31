@@ -18,9 +18,10 @@ paper-artifact-generation paths.
 ## blif2mig_2 binary (only needed for the FPGA flow)
 
 The FPGA campaign (`scripts/run_jetc_benchmark.py`) invokes our
-`blif2mig_2` synthesis tool, built from a fork of the mockturtle logic
-synthesis library that adds the mMIG optimization passes. The
-fault-analysis path does **not** need this — it uses the frozen
+`blif2mig_2` synthesis driver, built from a fork of the mockturtle logic
+synthesis library. The paper uses the driver's stock mockturtle MIG path;
+the experimental mMIG path in the vendor patch is disabled for the paper
+results. The fault-analysis path does **not** need this driver; it uses the frozen
 optimized BLIFs in `results/fpga_benchmark/`.
 
 To rebuild from source:
@@ -31,7 +32,7 @@ git clone https://github.com/lsils/mockturtle.git
 cd mockturtle
 git checkout 9f3a6c94327ee26a7cdcd998a38f5bb2131b956a
 
-# 2. Apply our mMIG patch (shipped in the artifact at vendor/).
+# 2. Apply the artifact patch (shipped at vendor/).
 git apply --reject /path/to/artifact/vendor/mockturtle-mmig.patch
 
 # 3. Build blif2mig_2.
@@ -47,12 +48,12 @@ See [vendor/README.md](vendor/README.md) for details on the patch
 
 The MIG optimization flow used in the paper is area-mode
 `dac19_compat` (`--mode=area --mig-flow=dac19_compat`): a fixed schedule
-of stock mockturtle passes — algebraic depth rewriting, MIG
+of stock mockturtle passes: algebraic depth rewriting, MIG
 resubstitution, cut rewriting with `mig_npn_resynthesis`, and
-refactoring. The exact 18-step schedule is reproduced in the paper
-(§3, Table "MIG schedule"); the invocation is `run_mig()` in
+refactoring. The paper gives the compact recipe in Section III-B; the
+invocation is `run_mig()` in
 [scripts/run_jetc_benchmark.py](scripts/run_jetc_benchmark.py). No
-minority gates are introduced (the mMIG path is not used in this paper).
+minority gates are introduced in the paper flow.
 
 ## Vivado (only needed for the FPGA flow)
 
@@ -78,13 +79,12 @@ TeX Live ≥ 2022 with `IEEEtran` document class and the `tikz`,
 ```bash
 cd paper/tex
 pdflatex main && bibtex main && pdflatex main && pdflatex main
-# main.pdf is the 6-page submission draft.
+# main.pdf is the submission draft.
 ```
 
 Compile once on a TeX-enabled machine before submission and inspect
 warnings. The repository intentionally still contains TODO placeholders
-for the author block, public artifact URL, acknowledgments, and several
-bibliography entries.
+for the anonymous artifact link and final camera-ready metadata.
 
 ## yosys (optional)
 
