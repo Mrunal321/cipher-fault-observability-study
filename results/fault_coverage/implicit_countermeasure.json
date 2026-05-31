@@ -1,0 +1,258 @@
+{
+  "rows": [
+    {
+      "circuit": "present_sbox",
+      "family": "4-bit S-box",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.7853,
+      "mmig_avgdp": 0.7853,
+      "aoig_to_mig_pct": -21.47,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0079,
+      "mmig_avgbw": 1.0079,
+      "aoig_fault_coverage": 57.14,
+      "mig_fault_coverage": 92.0
+    },
+    {
+      "circuit": "gift_sbox",
+      "family": "4-bit S-box",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8315,
+      "mmig_avgdp": 0.8315,
+      "aoig_to_mig_pct": -16.849999999999998,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 57.14,
+      "mig_fault_coverage": 92.0
+    },
+    {
+      "circuit": "prince_sbox",
+      "family": "4-bit S-box",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.7632,
+      "mmig_avgdp": 0.7632,
+      "aoig_to_mig_pct": -23.68,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 57.14,
+      "mig_fault_coverage": 90.48
+    },
+    {
+      "circuit": "prince_sbox_inv",
+      "family": "4-bit S-box",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.7688,
+      "mmig_avgdp": 0.7688,
+      "aoig_to_mig_pct": -23.119999999999997,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0446,
+      "mmig_avgbw": 1.0446,
+      "aoig_fault_coverage": 57.14,
+      "mig_fault_coverage": 90.91
+    },
+    {
+      "circuit": "gift_subcells",
+      "family": "Subst. round",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8316,
+      "mmig_avgdp": 0.8315,
+      "aoig_to_mig_pct": -16.84,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 95.52,
+      "mig_fault_coverage": 99.46
+    },
+    {
+      "circuit": "gift_round",
+      "family": "Subst. round",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8319,
+      "mmig_avgdp": 0.832,
+      "aoig_to_mig_pct": -16.810000000000002,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 98.84,
+      "mig_fault_coverage": 99.58
+    },
+    {
+      "circuit": "present_round",
+      "family": "Subst. round",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8018,
+      "mmig_avgdp": 0.8016,
+      "aoig_to_mig_pct": -19.820000000000004,
+      "aoig_avgbw": 1.5002,
+      "mig_avgbw": 1.5196,
+      "mmig_avgbw": 1.5195,
+      "aoig_fault_coverage": 98.46,
+      "mig_fault_coverage": 99.64
+    },
+    {
+      "circuit": "prince_mprime",
+      "family": "Permutation",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8998,
+      "mmig_avgdp": 0.9004,
+      "aoig_to_mig_pct": -10.019999999999996,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 96.97,
+      "mig_fault_coverage": 98.77
+    },
+    {
+      "circuit": "simon32_round",
+      "family": "SIMON",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8887,
+      "mmig_avgdp": 0.8889,
+      "aoig_to_mig_pct": -11.129999999999995,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 96.39,
+      "mig_fault_coverage": 98.63
+    },
+    {
+      "circuit": "simon64_round",
+      "family": "SIMON",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.889,
+      "mmig_avgdp": 0.889,
+      "aoig_to_mig_pct": -11.099999999999998,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 98.16,
+      "mig_fault_coverage": 99.31
+    },
+    {
+      "circuit": "keccak_chi_5bit",
+      "family": "Keccak chi",
+      "aoig_avgdp": 0.8333,
+      "mig_avgdp": 0.9,
+      "mmig_avgdp": 0.9,
+      "aoig_to_mig_pct": 8.00432017280691,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 83.33,
+      "mig_fault_coverage": 92.59
+    },
+    {
+      "circuit": "keccak_chi_64row",
+      "family": "Keccak chi",
+      "aoig_avgdp": 0.8334,
+      "mig_avgdp": 0.9,
+      "mmig_avgdp": 0.9,
+      "aoig_to_mig_pct": 7.991360691144707,
+      "aoig_avgbw": 1.0,
+      "mig_avgbw": 1.0,
+      "mmig_avgbw": 1.0,
+      "aoig_fault_coverage": 99.69,
+      "mig_fault_coverage": 99.88
+    },
+    {
+      "circuit": "speck32_round",
+      "family": "ARX",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8751,
+      "mmig_avgdp": 0.8751,
+      "aoig_to_mig_pct": -12.490000000000002,
+      "aoig_avgbw": 1.7898,
+      "mig_avgbw": 1.7125,
+      "mmig_avgbw": 1.7114,
+      "aoig_fault_coverage": 96.97,
+      "mig_fault_coverage": 98.95
+    },
+    {
+      "circuit": "speckey_box",
+      "family": "ARX",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8611,
+      "mmig_avgdp": 0.8609,
+      "aoig_to_mig_pct": -13.890000000000002,
+      "aoig_avgbw": 2.0814,
+      "mig_avgbw": 2.2376,
+      "mmig_avgbw": 2.237,
+      "aoig_fault_coverage": 98.16,
+      "mig_fault_coverage": 99.3
+    },
+    {
+      "circuit": "marx2_box",
+      "family": "ARX",
+      "aoig_avgdp": 1.0,
+      "mig_avgdp": 0.8618,
+      "mmig_avgdp": 0.8617,
+      "aoig_to_mig_pct": -13.819999999999999,
+      "aoig_avgbw": 2.0029,
+      "mig_avgbw": 2.2174,
+      "mmig_avgbw": 2.2211,
+      "aoig_fault_coverage": 97.96,
+      "mig_fault_coverage": 99.3
+    }
+  ],
+  "finding_1_observability_reduction": {
+    "n_circuits": 15,
+    "n_with_improvement": 13,
+    "mean_pct_change": -13.002954609069892,
+    "median_pct_change": -13.890000000000002,
+    "best_improvement": -23.68,
+    "best_circuit": "prince_sbox",
+    "worst_improvement": 8.00432017280691,
+    "worst_circuit": "keccak_chi_5bit"
+  },
+  "finding_2_arx_vs_substitution": {
+    "family_stats": {
+      "4-bit S-box": {
+        "n": 4,
+        "mean": 1.013125,
+        "stdev": 0.018456079621631448,
+        "min": 1.0,
+        "max": 1.0446
+      },
+      "Subst. round": {
+        "n": 3,
+        "mean": 1.1732,
+        "stdev": 0.24494178900302008,
+        "min": 1.0,
+        "max": 1.5196
+      },
+      "Permutation": {
+        "n": 1,
+        "mean": 1.0,
+        "stdev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "SIMON": {
+        "n": 2,
+        "mean": 1.0,
+        "stdev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "Keccak chi": {
+        "n": 2,
+        "mean": 1.0,
+        "stdev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "ARX": {
+        "n": 3,
+        "mean": 2.055833333333333,
+        "stdev": 0.24291334989159322,
+        "min": 1.7125,
+        "max": 2.2376
+      }
+    },
+    "arx_mean_avgbw": 2.055833333333333,
+    "subst_mean_avgbw": 1.0817285714285714,
+    "arx_over_subst_x": 1.9005075650524073
+  }
+}

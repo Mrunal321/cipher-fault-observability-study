@@ -1,0 +1,117 @@
+\section{Results}
+\label{sec:results}
+
+We report three results. First, the all-site \AvgDP{} comparison
+reverses sign when the LUT baseline is replaced by a decomposed-AIG
+baseline at comparable small-gate granularity. Second, target-layer
+\AvgDP{} is invariant across the three representations. Third, the
+ARX-versus-substitution \AvgBW{} gap is stable across the representation
+controls. We close with the synthetic MAJ-$n$ experiment as a
+forward-looking mechanism study.
+
+% =============================================================================
+\subsection{The AOIG-to-MIG comparison depends on granularity}
+\label{sec:results:granularity}
+
+The original LUT/AOIG-to-MIG comparison is reproducible: on the 15
+circuits, all-site \AvgDP{} changes by a mean of $-13.0\%$, with
+$13/15$ circuits showing lower \AvgDP{} under MIG. This number is not
+wrong, but it is not stable. When the baseline is a decomposed 2-input
+AIG at comparable small-gate granularity, the sign reverses: AIG$\to$MIG changes all-site \AvgDP{}
+by a mean of $+21.4\%$, and no circuit shows a reduction.
+Table~\ref{tab:granularity_confound} lists both comparisons.
+
+\input{../tables/granularity_confound}
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=\columnwidth]{../figures/granularity_curve}
+  \caption{All-site \AvgDP{} versus decomposition granularity, measured
+  as gate-output fault sites per primary output. Across LUT/AOIG, AIG,
+  and MIG representations, \AvgDP{} is associated with
+  representation granularity (Spearman $\rho=-0.85$ in the generated
+  artifact).}
+  \label{fig:granularity-curve}
+\end{figure}
+
+The mechanism is the site distribution described in
+\S\ref{sec:methodology:mechanism}. A wide LUT that directly drives a
+primary output contributes one output-adjacent site with high detection
+probability. A decomposed-AIG or MIG contributes many interior sites, and
+their effects can be masked by downstream gates. Averaging over all
+sites therefore mixes a logic question with a representation-size
+question. The same circuit can appear to gain or lose fault
+observability depending on which baseline supplies the fault-site
+population.
+
+% =============================================================================
+\subsection{Target-layer AvgDP is representation-invariant}
+\label{sec:results:target-layer}
+
+Restricting the campaign to output-driving gates removes the interior
+site mix. On the evaluated circuits, target-layer \AvgDP{} is exactly
+1.000 for LUT/AOIG, AIG, and MIG representations; the mean spread
+across flows is 0.000. Table~\ref{tab:representation_robustness}
+reports this together with the ARX/substitution \AvgBW{} ratio across
+representations.
+
+\input{../tables/representation_robustness}
+
+This does not mean target-layer faults are the only physical faults an
+attacker can induce. It means that when the target layer is held fixed,
+the apparent synthesis-flow \AvgDP{} difference disappears on this
+benchmark. We therefore treat all-site \AvgDP{} as a useful structural
+descriptor of a netlist, but not as a representation-independent
+security metric.
+
+% =============================================================================
+\subsection{ARX avalanche breadth is stable across representations}
+\label{sec:results:arx}
+
+The architecture-level \AvgBW{} result survives the granularity
+controls. In the MIG flow, ARX primitives have mean \AvgBW{} $=2.056$
+across Speck-32, SpecKey, and MARX-2, while the substitution-based pool
+has mean \AvgBW{} $=1.082$. Every ARX value exceeds every
+substitution-based value, giving a $1.90\times$ ratio
+(one-sided exact Mann-Whitney $p=0.0083$). The ratio remains between
+$1.85\times$ and $1.92\times$ across LUT/AOIG, AIG, and MIG
+representations (Table~\ref{tab:representation_robustness}).
+
+\input{../tables/arx_dichotomy}
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=\columnwidth]{../figures/arx_dichotomy}
+  \caption{Mean \AvgBW{} by cipher architecture family in the MIG flow.
+  Error bars show observed range $[\min,\max]$ over each family.}
+  \label{fig:arx-dichotomy}
+\end{figure}
+
+The likely mechanism is addition-chain carry propagation: a single
+internal fault in an ARX adder can change several downstream sum bits.
+This is an architecture-level observation, not an exploitability claim.
+Whether broader output differences help or hinder a concrete DFA depends
+on the cipher's algebraic constraints and round structure.
+
+% =============================================================================
+\subsection{Higher-arity majority remains a forward path}
+\label{sec:results:majn}
+
+The granularity result tempers the interpretation of the current MIG
+flow, but it does not invalidate the local masking mechanism. If a
+technology provides native higher-arity majority gates, a fault entering
+one input is masked whenever the remaining inputs already determine the
+vote. For odd arity $n$, that masking probability is
+$1-\binom{n-1}{(n-1)/2}/2^{n-1}$.
+
+We tested direct BLIF truth-table primitives for MAJ-3, MAJ-5, and
+MAJ-7 in matched synthetic chains and trees. Table~\ref{tab:majn-arity}
+shows monotone \AvgDP{} reductions from MAJ-3 to MAJ-5/7, ranging from
+18\% to 62\% depending on topology.
+
+\input{../tables/majn_arity}
+
+This is best read as a technology hypothesis. It suggests that native MAJ-$n$
+libraries could shift fault propagation if the synthesis flow preserves
+MAJ-$n$ as a primitive. It does not rescue the all-site LUT-to-MIG
+comparison for today's MAJ-3 decomposition flow.

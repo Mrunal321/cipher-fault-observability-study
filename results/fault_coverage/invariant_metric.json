@@ -1,0 +1,672 @@
+{
+  "rows": [
+    {
+      "circuit": "present_sbox",
+      "family": "Sbox",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 7,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 59,
+            "detectable": 56,
+            "avgdp": 0.7299,
+            "avgbw": 1.1482
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 25,
+            "detectable": 23,
+            "avgdp": 0.7853,
+            "avgbw": 1.0079
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "gift_sbox",
+      "family": "Sbox",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 7,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 49,
+            "detectable": 46,
+            "avgdp": 0.7677,
+            "avgbw": 1.1506
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 25,
+            "detectable": 23,
+            "avgdp": 0.8315,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "prince_sbox",
+      "family": "Sbox",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 7,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 42,
+            "detectable": 39,
+            "avgdp": 0.6987,
+            "avgbw": 1.0656
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 21,
+            "detectable": 19,
+            "avgdp": 0.7632,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "prince_sbox_inv",
+      "family": "Sbox",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 7,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 50,
+            "detectable": 47,
+            "avgdp": 0.6715,
+            "avgbw": 1.1157
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 22,
+            "detectable": 20,
+            "avgdp": 0.7688,
+            "avgbw": 1.0446
+          },
+          "target": {
+            "total": 4,
+            "detectable": 4,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "gift_subcells",
+      "family": "Subst",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 67,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 755,
+            "detectable": 752,
+            "avgdp": 0.7714,
+            "avgbw": 1.1799
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 370,
+            "detectable": 368,
+            "avgdp": 0.8316,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "gift_round",
+      "family": "Subst",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 259,
+            "detectable": 256,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 1209,
+            "detectable": 1092,
+            "avgdp": 0.7009,
+            "avgbw": 1.1254
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 478,
+            "detectable": 476,
+            "avgdp": 0.832,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "present_round",
+      "family": "Subst",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 195,
+            "detectable": 192,
+            "avgdp": 1.0,
+            "avgbw": 1.4998
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 1667,
+            "detectable": 1600,
+            "avgdp": 0.6873,
+            "avgbw": 1.4629
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 562,
+            "detectable": 560,
+            "avgdp": 0.8019,
+            "avgbw": 1.5194
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "prince_mprime",
+      "family": "Perm",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 99,
+            "detectable": 96,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 387,
+            "detectable": 384,
+            "avgdp": 0.7499,
+            "avgbw": 1.1809
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 162,
+            "detectable": 160,
+            "avgdp": 0.8999,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 64,
+            "detectable": 64,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "simon32_round",
+      "family": "SIMON",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 83,
+            "detectable": 80,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 435,
+            "detectable": 432,
+            "avgdp": 0.6018,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 146,
+            "detectable": 144,
+            "avgdp": 0.8891,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "keccak_chi_5bit",
+      "family": "Keccak",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 18,
+            "detectable": 15,
+            "avgdp": 0.8333,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 5,
+            "detectable": 5,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 48,
+            "detectable": 45,
+            "avgdp": 0.8056,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 5,
+            "detectable": 5,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 27,
+            "detectable": 25,
+            "avgdp": 0.9,
+            "avgbw": 1.0
+          },
+          "target": {
+            "total": 5,
+            "detectable": 5,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "speckey_box",
+      "family": "ARX",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 163,
+            "detectable": 160,
+            "avgdp": 1.0,
+            "avgbw": 2.0831
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 1062,
+            "detectable": 1026,
+            "avgdp": 0.6238,
+            "avgbw": 2.2179
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 285,
+            "detectable": 283,
+            "avgdp": 0.8612,
+            "avgbw": 2.2412
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "speck32_round",
+      "family": "ARX",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 99,
+            "detectable": 96,
+            "avgdp": 1.0,
+            "avgbw": 1.7935
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 544,
+            "detectable": 508,
+            "avgdp": 0.7055,
+            "avgbw": 2.2237
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.4687
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 190,
+            "detectable": 188,
+            "avgdp": 0.875,
+            "avgbw": 1.7136
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    },
+    {
+      "circuit": "marx2_box",
+      "family": "ARX",
+      "flows": {
+        "aoig": {
+          "all": {
+            "total": 147,
+            "detectable": 144,
+            "avgdp": 1.0,
+            "avgbw": 2.0048
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "aig": {
+          "all": {
+            "total": 1025,
+            "detectable": 988,
+            "avgdp": 0.6251,
+            "avgbw": 2.1264
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        },
+        "mig": {
+          "all": {
+            "total": 284,
+            "detectable": 282,
+            "avgdp": 0.8617,
+            "avgbw": 2.2217
+          },
+          "target": {
+            "total": 32,
+            "detectable": 32,
+            "avgdp": 1.0,
+            "avgbw": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "target_layer_mean_spread": 0.0,
+    "finding3_by_flow": {
+      "aoig": {
+        "by_family": {
+          "Sbox": 1.0,
+          "Subst": 1.167,
+          "Perm": 1.0,
+          "SIMON": 1.0,
+          "Keccak": 1.0,
+          "ARX": 1.96
+        },
+        "arx": 1.96,
+        "subst": 1.062,
+        "arx_over_subst": 1.846
+      },
+      "aig": {
+        "by_family": {
+          "Sbox": 1.12,
+          "Subst": 1.256,
+          "Perm": 1.181,
+          "SIMON": 1.0,
+          "Keccak": 1.0,
+          "ARX": 2.189
+        },
+        "arx": 2.189,
+        "subst": 1.179,
+        "arx_over_subst": 1.857
+      },
+      "mig": {
+        "by_family": {
+          "Sbox": 1.013,
+          "Subst": 1.173,
+          "Perm": 1.0,
+          "SIMON": 1.0,
+          "Keccak": 1.0,
+          "ARX": 2.059
+        },
+        "arx": 2.059,
+        "subst": 1.071,
+        "arx_over_subst": 1.923
+      }
+    }
+  }
+}

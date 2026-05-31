@@ -1,0 +1,1093 @@
+.model present_round
+.inputs state_in0 state_in1 state_in2 state_in3 state_in4 state_in5 state_in6 state_in7 state_in8 state_in9 state_in10 state_in11 state_in12 state_in13 state_in14 state_in15 state_in16 state_in17 state_in18 state_in19 state_in20 state_in21 state_in22 state_in23 state_in24 state_in25 state_in26 state_in27 state_in28 state_in29 state_in30 state_in31 state_in32 state_in33 state_in34 state_in35 state_in36 state_in37 state_in38 state_in39 state_in40 state_in41 state_in42 state_in43 state_in44 state_in45 state_in46 state_in47 state_in48 state_in49 state_in50 state_in51 state_in52 state_in53 state_in54 state_in55 state_in56 state_in57 state_in58 state_in59 state_in60 state_in61 state_in62 state_in63 rkey0 rkey1 rkey2 rkey3 rkey4 rkey5 rkey6 rkey7 rkey8 rkey9 rkey10 rkey11 rkey12 rkey13 rkey14 rkey15 rkey16 rkey17 rkey18 rkey19 rkey20 rkey21 rkey22 rkey23 rkey24 rkey25 rkey26 rkey27 rkey28 rkey29 rkey30 rkey31 rkey32 rkey33 rkey34 rkey35 rkey36 rkey37 rkey38 rkey39 rkey40 rkey41 rkey42 rkey43 rkey44 rkey45 rkey46 rkey47 rkey48 rkey49 rkey50 rkey51 rkey52 rkey53 rkey54 rkey55 rkey56 rkey57 rkey58 rkey59 rkey60 rkey61 rkey62 rkey63
+.outputs state_out0 state_out1 state_out2 state_out3 state_out4 state_out5 state_out6 state_out7 state_out8 state_out9 state_out10 state_out11 state_out12 state_out13 state_out14 state_out15 state_out16 state_out17 state_out18 state_out19 state_out20 state_out21 state_out22 state_out23 state_out24 state_out25 state_out26 state_out27 state_out28 state_out29 state_out30 state_out31 state_out32 state_out33 state_out34 state_out35 state_out36 state_out37 state_out38 state_out39 state_out40 state_out41 state_out42 state_out43 state_out44 state_out45 state_out46 state_out47 state_out48 state_out49 state_out50 state_out51 state_out52 state_out53 state_out54 state_out55 state_out56 state_out57 state_out58 state_out59 state_out60 state_out61 state_out62 state_out63
+
+.names state_in0 rkey0 xk0
+01 1
+10 1
+
+.names state_in1 rkey1 xk1
+01 1
+10 1
+
+.names state_in2 rkey2 xk2
+01 1
+10 1
+
+.names state_in3 rkey3 xk3
+01 1
+10 1
+
+.names state_in4 rkey4 xk4
+01 1
+10 1
+
+.names state_in5 rkey5 xk5
+01 1
+10 1
+
+.names state_in6 rkey6 xk6
+01 1
+10 1
+
+.names state_in7 rkey7 xk7
+01 1
+10 1
+
+.names state_in8 rkey8 xk8
+01 1
+10 1
+
+.names state_in9 rkey9 xk9
+01 1
+10 1
+
+.names state_in10 rkey10 xk10
+01 1
+10 1
+
+.names state_in11 rkey11 xk11
+01 1
+10 1
+
+.names state_in12 rkey12 xk12
+01 1
+10 1
+
+.names state_in13 rkey13 xk13
+01 1
+10 1
+
+.names state_in14 rkey14 xk14
+01 1
+10 1
+
+.names state_in15 rkey15 xk15
+01 1
+10 1
+
+.names state_in16 rkey16 xk16
+01 1
+10 1
+
+.names state_in17 rkey17 xk17
+01 1
+10 1
+
+.names state_in18 rkey18 xk18
+01 1
+10 1
+
+.names state_in19 rkey19 xk19
+01 1
+10 1
+
+.names state_in20 rkey20 xk20
+01 1
+10 1
+
+.names state_in21 rkey21 xk21
+01 1
+10 1
+
+.names state_in22 rkey22 xk22
+01 1
+10 1
+
+.names state_in23 rkey23 xk23
+01 1
+10 1
+
+.names state_in24 rkey24 xk24
+01 1
+10 1
+
+.names state_in25 rkey25 xk25
+01 1
+10 1
+
+.names state_in26 rkey26 xk26
+01 1
+10 1
+
+.names state_in27 rkey27 xk27
+01 1
+10 1
+
+.names state_in28 rkey28 xk28
+01 1
+10 1
+
+.names state_in29 rkey29 xk29
+01 1
+10 1
+
+.names state_in30 rkey30 xk30
+01 1
+10 1
+
+.names state_in31 rkey31 xk31
+01 1
+10 1
+
+.names state_in32 rkey32 xk32
+01 1
+10 1
+
+.names state_in33 rkey33 xk33
+01 1
+10 1
+
+.names state_in34 rkey34 xk34
+01 1
+10 1
+
+.names state_in35 rkey35 xk35
+01 1
+10 1
+
+.names state_in36 rkey36 xk36
+01 1
+10 1
+
+.names state_in37 rkey37 xk37
+01 1
+10 1
+
+.names state_in38 rkey38 xk38
+01 1
+10 1
+
+.names state_in39 rkey39 xk39
+01 1
+10 1
+
+.names state_in40 rkey40 xk40
+01 1
+10 1
+
+.names state_in41 rkey41 xk41
+01 1
+10 1
+
+.names state_in42 rkey42 xk42
+01 1
+10 1
+
+.names state_in43 rkey43 xk43
+01 1
+10 1
+
+.names state_in44 rkey44 xk44
+01 1
+10 1
+
+.names state_in45 rkey45 xk45
+01 1
+10 1
+
+.names state_in46 rkey46 xk46
+01 1
+10 1
+
+.names state_in47 rkey47 xk47
+01 1
+10 1
+
+.names state_in48 rkey48 xk48
+01 1
+10 1
+
+.names state_in49 rkey49 xk49
+01 1
+10 1
+
+.names state_in50 rkey50 xk50
+01 1
+10 1
+
+.names state_in51 rkey51 xk51
+01 1
+10 1
+
+.names state_in52 rkey52 xk52
+01 1
+10 1
+
+.names state_in53 rkey53 xk53
+01 1
+10 1
+
+.names state_in54 rkey54 xk54
+01 1
+10 1
+
+.names state_in55 rkey55 xk55
+01 1
+10 1
+
+.names state_in56 rkey56 xk56
+01 1
+10 1
+
+.names state_in57 rkey57 xk57
+01 1
+10 1
+
+.names state_in58 rkey58 xk58
+01 1
+10 1
+
+.names state_in59 rkey59 xk59
+01 1
+10 1
+
+.names state_in60 rkey60 xk60
+01 1
+10 1
+
+.names state_in61 rkey61 xk61
+01 1
+10 1
+
+.names state_in62 rkey62 xk62
+01 1
+10 1
+
+.names state_in63 rkey63 xk63
+01 1
+10 1
+
+.names xk0 xk1 xk2 xk3 s_out0
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk0 xk1 xk2 xk3 s_out1
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk0 xk1 xk2 xk3 s_out2
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk0 xk1 xk2 xk3 s_out3
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk4 xk5 xk6 xk7 s_out4
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk4 xk5 xk6 xk7 s_out5
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk4 xk5 xk6 xk7 s_out6
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk4 xk5 xk6 xk7 s_out7
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk8 xk9 xk10 xk11 s_out8
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk8 xk9 xk10 xk11 s_out9
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk8 xk9 xk10 xk11 s_out10
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk8 xk9 xk10 xk11 s_out11
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk12 xk13 xk14 xk15 s_out12
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk12 xk13 xk14 xk15 s_out13
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk12 xk13 xk14 xk15 s_out14
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk12 xk13 xk14 xk15 s_out15
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk16 xk17 xk18 xk19 s_out16
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk16 xk17 xk18 xk19 s_out17
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk16 xk17 xk18 xk19 s_out18
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk16 xk17 xk18 xk19 s_out19
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk20 xk21 xk22 xk23 s_out20
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk20 xk21 xk22 xk23 s_out21
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk20 xk21 xk22 xk23 s_out22
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk20 xk21 xk22 xk23 s_out23
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk24 xk25 xk26 xk27 s_out24
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk24 xk25 xk26 xk27 s_out25
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk24 xk25 xk26 xk27 s_out26
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk24 xk25 xk26 xk27 s_out27
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk28 xk29 xk30 xk31 s_out28
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk28 xk29 xk30 xk31 s_out29
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk28 xk29 xk30 xk31 s_out30
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk28 xk29 xk30 xk31 s_out31
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk32 xk33 xk34 xk35 s_out32
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk32 xk33 xk34 xk35 s_out33
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk32 xk33 xk34 xk35 s_out34
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk32 xk33 xk34 xk35 s_out35
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk36 xk37 xk38 xk39 s_out36
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk36 xk37 xk38 xk39 s_out37
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk36 xk37 xk38 xk39 s_out38
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk36 xk37 xk38 xk39 s_out39
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk40 xk41 xk42 xk43 s_out40
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk40 xk41 xk42 xk43 s_out41
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk40 xk41 xk42 xk43 s_out42
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk40 xk41 xk42 xk43 s_out43
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk44 xk45 xk46 xk47 s_out44
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk44 xk45 xk46 xk47 s_out45
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk44 xk45 xk46 xk47 s_out46
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk44 xk45 xk46 xk47 s_out47
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk48 xk49 xk50 xk51 s_out48
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk48 xk49 xk50 xk51 s_out49
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk48 xk49 xk50 xk51 s_out50
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk48 xk49 xk50 xk51 s_out51
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk52 xk53 xk54 xk55 s_out52
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk52 xk53 xk54 xk55 s_out53
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk52 xk53 xk54 xk55 s_out54
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk52 xk53 xk54 xk55 s_out55
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk56 xk57 xk58 xk59 s_out56
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk56 xk57 xk58 xk59 s_out57
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk56 xk57 xk58 xk59 s_out58
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk56 xk57 xk58 xk59 s_out59
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names xk60 xk61 xk62 xk63 s_out60
+0000 1
+0011 1
+0100 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+
+.names xk60 xk61 xk62 xk63 s_out61
+0000 1
+0001 1
+0010 1
+0111 1
+1001 1
+1010 1
+1100 1
+1101 1
+
+.names xk60 xk61 xk62 xk63 s_out62
+0010 1
+0011 1
+0110 1
+1000 1
+1001 1
+1010 1
+1101 1
+1111 1
+
+.names xk60 xk61 xk62 xk63 s_out63
+0001 1
+0011 1
+0100 1
+0111 1
+1000 1
+1010 1
+1101 1
+1110 1
+
+.names s_out0 state_out0
+1 1
+
+.names s_out4 state_out1
+1 1
+
+.names s_out8 state_out2
+1 1
+
+.names s_out12 state_out3
+1 1
+
+.names s_out16 state_out4
+1 1
+
+.names s_out20 state_out5
+1 1
+
+.names s_out24 state_out6
+1 1
+
+.names s_out28 state_out7
+1 1
+
+.names s_out32 state_out8
+1 1
+
+.names s_out36 state_out9
+1 1
+
+.names s_out40 state_out10
+1 1
+
+.names s_out44 state_out11
+1 1
+
+.names s_out48 state_out12
+1 1
+
+.names s_out52 state_out13
+1 1
+
+.names s_out56 state_out14
+1 1
+
+.names s_out60 state_out15
+1 1
+
+.names s_out1 state_out16
+1 1
+
+.names s_out5 state_out17
+1 1
+
+.names s_out9 state_out18
+1 1
+
+.names s_out13 state_out19
+1 1
+
+.names s_out17 state_out20
+1 1
+
+.names s_out21 state_out21
+1 1
+
+.names s_out25 state_out22
+1 1
+
+.names s_out29 state_out23
+1 1
+
+.names s_out33 state_out24
+1 1
+
+.names s_out37 state_out25
+1 1
+
+.names s_out41 state_out26
+1 1
+
+.names s_out45 state_out27
+1 1
+
+.names s_out49 state_out28
+1 1
+
+.names s_out53 state_out29
+1 1
+
+.names s_out57 state_out30
+1 1
+
+.names s_out61 state_out31
+1 1
+
+.names s_out2 state_out32
+1 1
+
+.names s_out6 state_out33
+1 1
+
+.names s_out10 state_out34
+1 1
+
+.names s_out14 state_out35
+1 1
+
+.names s_out18 state_out36
+1 1
+
+.names s_out22 state_out37
+1 1
+
+.names s_out26 state_out38
+1 1
+
+.names s_out30 state_out39
+1 1
+
+.names s_out34 state_out40
+1 1
+
+.names s_out38 state_out41
+1 1
+
+.names s_out42 state_out42
+1 1
+
+.names s_out46 state_out43
+1 1
+
+.names s_out50 state_out44
+1 1
+
+.names s_out54 state_out45
+1 1
+
+.names s_out58 state_out46
+1 1
+
+.names s_out62 state_out47
+1 1
+
+.names s_out3 state_out48
+1 1
+
+.names s_out7 state_out49
+1 1
+
+.names s_out11 state_out50
+1 1
+
+.names s_out15 state_out51
+1 1
+
+.names s_out19 state_out52
+1 1
+
+.names s_out23 state_out53
+1 1
+
+.names s_out27 state_out54
+1 1
+
+.names s_out31 state_out55
+1 1
+
+.names s_out35 state_out56
+1 1
+
+.names s_out39 state_out57
+1 1
+
+.names s_out43 state_out58
+1 1
+
+.names s_out47 state_out59
+1 1
+
+.names s_out51 state_out60
+1 1
+
+.names s_out55 state_out61
+1 1
+
+.names s_out59 state_out62
+1 1
+
+.names s_out63 state_out63
+1 1
+
+.end

@@ -1,0 +1,69 @@
+% Worked masking example: present_sbox MIG
+% Fault site g = new_n12 (MAJ3 of pi1, pi2, new_n11)
+% Downstream gate h = new_n15 (MAJ3 of new_n10, ~new_n12, new_n14)
+% g has exactly one consumer (h), so dp(g) is determined entirely by h's masking.
+
+\begin{figure*}[tbp]
+  \centering
+  \begin{tikzpicture}[
+    >=stealth,
+    every node/.style={font=\small},
+    gate/.style={draw, rounded corners=1pt, minimum width=1.6cm,
+                 minimum height=0.7cm, fill=blue!8},
+    fgate/.style={draw, rounded corners=1pt, minimum width=1.6cm,
+                  minimum height=0.7cm, fill=red!10, draw=red!70},
+    wire/.style={->, thick},
+    inv/.style={circle, inner sep=0pt, minimum size=4pt, draw, fill=white},
+  ]
+    % Primary inputs feeding g
+    \node (pi1)   at (-3.2,   1.0) {\scriptsize \texttt{pi1}};
+    \node (pi2)   at (-3.2,   0.3) {\scriptsize \texttt{pi2}};
+    \node (n11)   at (-3.2,  -0.4) {\scriptsize \texttt{new\_n11}};
+
+    % Fault gate g
+    \node[fgate] (g) at (-1.0, 0.3) {\textsc{maj3} $g$};
+    \node[above=2pt of g, font=\scriptsize\itshape] {fault site};
+
+    \draw[wire] (pi1) -- (g.west |- pi1);
+    \draw[wire] (pi2) -- (g.west);
+    \draw[wire] (n11) -- (g.west |- n11);
+
+    % Other inputs to h
+    \node (n10)   at (1.5,  1.0) {\scriptsize \texttt{new\_n10}};
+    \node (n14)   at (1.5, -0.4) {\scriptsize \texttt{new\_n14}};
+
+    % Downstream gate h (sole consumer of g)
+    \node[gate] (h) at (3.8, 0.3) {\textsc{maj3} $h$};
+
+    % Inverter bubble on g -> h edge (h treats g's contribution complemented)
+    \node[inv] (bubble) at (2.7, 0.3) {};
+
+    \draw[wire] (g.east) -- (bubble.west);
+    \draw[wire] (bubble.east) -- (h.west);
+    \draw[wire] (n10) -- (h.west |- n10);
+    \draw[wire] (n14) -- (h.west |- n14);
+
+    % Output
+    \node (out) at (6.2, 0.3) {\scriptsize \texttt{new\_n15}};
+    \draw[wire] (h.east) -- (out.west);
+
+    % Annotation: masking rule
+    \node[align=center, font=\scriptsize, draw=gray!50,
+          rounded corners=2pt, fill=gray!5, inner sep=4pt]
+      (note) at (2.4, -1.7)
+      {When \texttt{new\_n10} $=$ \texttt{new\_n14} (agree): non-controlling pattern, fault masked.\\[-1pt]
+       When \texttt{new\_n10} $\neq$ \texttt{new\_n14} (disagree): fault propagates. (8\,/\,16 each.)};
+    \draw[densely dotted, gray!70] (h) -- (note);
+  \end{tikzpicture}
+  \caption{Worked masking example from the \texttt{present\_sbox} MIG.
+    Gate $g$ (fault site) feeds a single downstream MAJ3 gate $h$
+    through a complemented edge. A bit-flip at $g$ propagates to $h$'s
+    output iff the other two inputs of $h$ \emph{disagree}; when they
+    \emph{agree}, they form the non-controlling pattern and mask the
+    fault. Over the 16 exhaustive input vectors, the other two inputs
+    agree on 8 vectors (fault masked) and disagree on 8 (fault propagates). Because $g$ has $h$ as its sole consumer, this
+    completely determines $g$'s observability: $\mathrm{dp}(g) = 8/16
+    = 0.5$. The per-vector trace in Table~\ref{tab:masking-trace}
+    enumerates all 16 vectors.}
+  \label{fig:masking-example}
+\end{figure*}

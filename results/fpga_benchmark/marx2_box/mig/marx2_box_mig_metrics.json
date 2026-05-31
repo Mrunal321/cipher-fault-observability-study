@@ -1,0 +1,13 @@
+{
+  "synth_luts": 84,
+  "synth_lut1": 0,
+  "logic_levels": 4,
+  "impl_luts": 84,
+  "impl_lut1": 0,
+  "delay_ns": 4.123,
+  "logic_ns": 1.170,
+  "route_ns": 2.953,
+  "logic_power_mw": 0.0,
+  "signal_power_mw": 1.0,
+  "dynamic_power_mw": 31.0
+}

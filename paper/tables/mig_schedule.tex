@@ -1,0 +1,40 @@
+% MIG dac19_compat schedule, transcribed verbatim from the synthesis driver
+% (build_majority_flow, case majority_flow_kind::dac19_compat).
+% Order is exact; resub pairs are (cut size, max inserts).
+\begin{table}[t]
+\centering
+\caption{Exact ordered pass schedule of the MIG flow
+(\texttt{--mode=area --mig-flow=dac19\_compat}). Each step is followed by
+\texttt{cleanup\_dangling}. ``mighty'' = \texttt{mig\_algebraic\_depth\_rewriting}
+(\texttt{allow\_area\_increase=false}); ``resub'' = \texttt{mig\_resubstitution}
+(\texttt{preserve\_depth}, no don't-cares); ``rewrite'' =
+\texttt{cut\_rewriting} with \texttt{mig\_npn\_resynthesis} ($k{=}4$, limit $12$);
+``refactor'' = \texttt{refactoring} (max-PIs $4$). ``zero'' = zero-gain rewrites
+permitted. Resub \texttt{max\_inserts} is capped to $1$ by the driver whenever
+the cut size exceeds $8$; the values below are as executed.}
+\label{tab:mig-schedule}
+\begin{tabular}{rll}
+\toprule
+\# & Pass & Parameters \\
+\midrule
+1  & mighty            & area-aware \\
+2  & resub             & cut $6$, inserts $1$ \\
+3  & rewrite           & $k{=}4$, limit $12$ \\
+4  & resub             & cut $6$, inserts $2$ \\
+5  & refactor          & max-PIs $4$ \\
+6  & resub             & cut $8$, inserts $1$ \\
+7  & mighty            & area-aware \\
+8  & resub             & cut $8$, inserts $2$ \\
+9  & rewrite           & $k{=}4$, limit $12$ \\
+10 & resub             & cut $10$, inserts $1$ \\
+11 & rewrite (zero)    & $k{=}4$, limit $12$ \\
+12 & resub             & cut $10$, inserts $1$ (capped) \\
+13 & mighty            & area-aware \\
+14 & resub             & cut $12$, inserts $1$ \\
+15 & refactor (zero)   & max-PIs $4$ \\
+16 & resub             & cut $12$, inserts $1$ (capped) \\
+17 & rewrite (zero)    & $k{=}4$, limit $12$ \\
+18 & mighty            & area-aware \\
+\bottomrule
+\end{tabular}
+\end{table}

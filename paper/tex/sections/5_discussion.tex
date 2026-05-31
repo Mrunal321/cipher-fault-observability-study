@@ -1,0 +1,64 @@
+\section{Discussion}
+\label{sec:discussion}
+
+% =============================================================================
+\subsection{What should be reported}
+\label{sec:discussion:reporting}
+
+The main lesson is methodological. All-site fault metrics are meaningful
+only together with the fault-site population they average over. Reporting
+\AvgDP{} without the representation granularity can make a decomposition
+look like a defense or a regression depending on the chosen baseline. A
+minimum report should therefore include the number of fault sites,
+fault sites per primary output, whether sites are all internal gates or a
+targeted layer, and the synthesis pass that created the baseline.
+
+For cross-representation comparisons, we recommend pairing all-site
+metrics with at least one controlled metric. A decomposed-AIG baseline at comparable small-gate granularity
+tests whether the effect is specific to the logic primitive rather than
+to decomposition size. A target-layer metric tests whether the
+attacker-facing output layer changes when interior nodes are excluded.
+In our benchmark, both controls overturn the naive LUT-to-MIG
+interpretation.
+
+% =============================================================================
+\subsection{What remains useful}
+\label{sec:discussion:robust}
+
+The granularity control does not make the artifact negative. It separates
+three kinds of claims. First, the LUT-to-MIG \AvgDP{} reduction is a
+real property of that pair of netlists, useful if a designer specifically
+cares about all internal sites in those representations. Second, the
+target-layer result shows that this reduction should not be promoted to a
+representation-independent fault-resistance claim. Third, the ARX
+\AvgBW{} result survives the controls and is therefore a stronger
+design fact.
+
+% =============================================================================
+\subsection{Limits}
+\label{sec:discussion:limits}
+
+\textit{Fault model.} We model one transient \bitflip{} at one
+gate-output wire. Stuck-at faults, delay faults, multi-bit faults, and
+physical injection footprints may interact with representation
+granularity differently.
+
+\textit{Input model.} For large circuits we use a fixed 10,000-vector
+uniform random sample; small circuits are exhaustive. An adversary who
+can choose inputs may target vectors that maximize or minimize
+propagation. Worst-case input search is a separate attack problem.
+
+\textit{Target layer.} Output-driving gates are a clean controlled layer,
+not a complete physical adversary model. They are useful because the
+layer exists in every representation and avoids the interior-node
+population shift, but other fixed layers could be studied.
+
+\textit{Sample size.} The ARX result uses three ARX primitives and seven
+substitution-based primitives. Its no-overlap pattern is strong in this
+benchmark, but a wider set of addition-chain and substitution designs is
+needed before treating the ratio as a general law.
+
+\textit{End-to-end DFA.} None of the metrics directly measures key
+recovery. \FCpct{}, \AvgDP{}, and \AvgBW{} describe observability and
+output corruption. Algebraic usefulness of those differences remains
+cipher-specific.

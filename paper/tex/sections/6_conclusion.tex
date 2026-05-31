@@ -1,0 +1,24 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+Gate-level fault observability metrics are sensitive to the granularity
+of the representation being measured. On our 15-circuit cipher
+benchmark, the apparent LUT/AOIG-to-MIG \AvgDP{} reduction is real for
+that baseline but reverses under a decomposed-AIG control at comparable
+small-gate granularity. A
+target-layer campaign further shows \AvgDP{} $=1.000$ across LUT/AOIG,
+AIG, and MIG representations for the evaluated circuits. The safest
+conclusion is therefore not that MIG synthesis is a fault countermeasure,
+but that all-site fault metrics must be reported with their
+representation and site-population assumptions.
+
+One design fact survives that control: ARX primitives produce broader
+output corruption per detected fault than substitution-based primitives
+across representations.
+The MAJ-$n$ synthetic study points to a future technology question:
+native higher-arity majority libraries may change propagation behavior,
+but that must be evaluated as native MAJ-$n$, not inferred from MAJ-3
+decompositions.
+
+All measurements, scripts, and source data are included in the
+accompanying reproducibility artifact.

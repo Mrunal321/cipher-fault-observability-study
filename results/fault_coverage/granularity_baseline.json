@@ -1,0 +1,191 @@
+{
+  "rows": [
+    {
+      "circuit": "present_sbox",
+      "aig_total_faults": 59,
+      "aig_detectable": 56,
+      "aig_avgdp": 0.7299,
+      "aig_fault_coverage": 94.92,
+      "mig_total_faults": 25,
+      "mig_detectable": 23,
+      "mig_avgdp": 0.7853,
+      "mig_fault_coverage": 92.0,
+      "aig_to_mig_pct": 7.59
+    },
+    {
+      "circuit": "gift_sbox",
+      "aig_total_faults": 49,
+      "aig_detectable": 46,
+      "aig_avgdp": 0.7677,
+      "aig_fault_coverage": 93.88,
+      "mig_total_faults": 25,
+      "mig_detectable": 23,
+      "mig_avgdp": 0.8315,
+      "mig_fault_coverage": 92.0,
+      "aig_to_mig_pct": 8.31
+    },
+    {
+      "circuit": "prince_sbox",
+      "aig_total_faults": 42,
+      "aig_detectable": 39,
+      "aig_avgdp": 0.6987,
+      "aig_fault_coverage": 92.86,
+      "mig_total_faults": 21,
+      "mig_detectable": 19,
+      "mig_avgdp": 0.7632,
+      "mig_fault_coverage": 90.48,
+      "aig_to_mig_pct": 9.23
+    },
+    {
+      "circuit": "prince_sbox_inv",
+      "aig_total_faults": 50,
+      "aig_detectable": 47,
+      "aig_avgdp": 0.6715,
+      "aig_fault_coverage": 94.0,
+      "mig_total_faults": 22,
+      "mig_detectable": 20,
+      "mig_avgdp": 0.7688,
+      "mig_fault_coverage": 90.91,
+      "aig_to_mig_pct": 14.49
+    },
+    {
+      "circuit": "gift_subcells",
+      "aig_total_faults": 755,
+      "aig_detectable": 752,
+      "aig_avgdp": 0.7714,
+      "aig_fault_coverage": 99.6,
+      "mig_total_faults": 370,
+      "mig_detectable": 368,
+      "mig_avgdp": 0.8316,
+      "mig_fault_coverage": 99.46,
+      "aig_to_mig_pct": 7.8
+    },
+    {
+      "circuit": "gift_round",
+      "aig_total_faults": 1209,
+      "aig_detectable": 1092,
+      "aig_avgdp": 0.7009,
+      "aig_fault_coverage": 90.32,
+      "mig_total_faults": 478,
+      "mig_detectable": 476,
+      "mig_avgdp": 0.832,
+      "mig_fault_coverage": 99.58,
+      "aig_to_mig_pct": 18.7
+    },
+    {
+      "circuit": "present_round",
+      "aig_total_faults": 1667,
+      "aig_detectable": 1600,
+      "aig_avgdp": 0.6873,
+      "aig_fault_coverage": 95.98,
+      "mig_total_faults": 562,
+      "mig_detectable": 560,
+      "mig_avgdp": 0.8019,
+      "mig_fault_coverage": 99.64,
+      "aig_to_mig_pct": 16.67
+    },
+    {
+      "circuit": "prince_mprime",
+      "aig_total_faults": 387,
+      "aig_detectable": 384,
+      "aig_avgdp": 0.7499,
+      "aig_fault_coverage": 99.22,
+      "mig_total_faults": 162,
+      "mig_detectable": 160,
+      "mig_avgdp": 0.8999,
+      "mig_fault_coverage": 98.77,
+      "aig_to_mig_pct": 20.0
+    },
+    {
+      "circuit": "simon32_round",
+      "aig_total_faults": 435,
+      "aig_detectable": 432,
+      "aig_avgdp": 0.6018,
+      "aig_fault_coverage": 99.31,
+      "mig_total_faults": 146,
+      "mig_detectable": 144,
+      "mig_avgdp": 0.8891,
+      "mig_fault_coverage": 98.63,
+      "aig_to_mig_pct": 47.74
+    },
+    {
+      "circuit": "simon64_round",
+      "aig_total_faults": 867,
+      "aig_detectable": 864,
+      "aig_avgdp": 0.6018,
+      "aig_fault_coverage": 99.65,
+      "mig_total_faults": 290,
+      "mig_detectable": 288,
+      "mig_avgdp": 0.8889,
+      "mig_fault_coverage": 99.31,
+      "aig_to_mig_pct": 47.71
+    },
+    {
+      "circuit": "keccak_chi_5bit",
+      "aig_total_faults": 48,
+      "aig_detectable": 45,
+      "aig_avgdp": 0.8056,
+      "aig_fault_coverage": 93.75,
+      "mig_total_faults": 27,
+      "mig_detectable": 25,
+      "mig_avgdp": 0.9,
+      "mig_fault_coverage": 92.59,
+      "aig_to_mig_pct": 11.72
+    },
+    {
+      "circuit": "keccak_chi_64row",
+      "aig_total_faults": 2883,
+      "aig_detectable": 2880,
+      "aig_avgdp": 0.8056,
+      "aig_fault_coverage": 99.9,
+      "mig_total_faults": 1602,
+      "mig_detectable": 1600,
+      "mig_avgdp": 0.9,
+      "mig_fault_coverage": 99.88,
+      "aig_to_mig_pct": 11.72
+    },
+    {
+      "circuit": "speckey_box",
+      "aig_total_faults": 1062,
+      "aig_detectable": 1026,
+      "aig_avgdp": 0.6238,
+      "aig_fault_coverage": 96.61,
+      "mig_total_faults": 285,
+      "mig_detectable": 283,
+      "mig_avgdp": 0.8612,
+      "mig_fault_coverage": 99.3,
+      "aig_to_mig_pct": 38.06
+    },
+    {
+      "circuit": "speck32_round",
+      "aig_total_faults": 544,
+      "aig_detectable": 508,
+      "aig_avgdp": 0.7055,
+      "aig_fault_coverage": 93.38,
+      "mig_total_faults": 190,
+      "mig_detectable": 188,
+      "mig_avgdp": 0.875,
+      "mig_fault_coverage": 98.95,
+      "aig_to_mig_pct": 24.03
+    },
+    {
+      "circuit": "marx2_box",
+      "aig_total_faults": 1025,
+      "aig_detectable": 988,
+      "aig_avgdp": 0.6251,
+      "aig_fault_coverage": 96.39,
+      "mig_total_faults": 284,
+      "mig_detectable": 282,
+      "mig_avgdp": 0.8617,
+      "mig_fault_coverage": 99.3,
+      "aig_to_mig_pct": 37.85
+    }
+  ],
+  "summary": {
+    "baseline": "yosys abc -g AND (2-input AIG), same-granularity control",
+    "n_circuits": 15,
+    "n_with_reduction": 0,
+    "mean_pct_change": 21.44,
+    "note": "Compare against the LUT-baseline finding_1 mean of -13.0% (13/15 reduced). The gap that survives here is the part of the AvgDP effect not explained by synthesis granularity."
+  }
+}

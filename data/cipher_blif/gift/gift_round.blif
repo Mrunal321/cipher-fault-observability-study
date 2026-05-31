@@ -1,0 +1,1259 @@
+.model gift_round
+.inputs state_in0 state_in1 state_in2 state_in3 state_in4 state_in5 state_in6 state_in7 state_in8 state_in9 state_in10 state_in11 state_in12 state_in13 state_in14 state_in15 state_in16 state_in17 state_in18 state_in19 state_in20 state_in21 state_in22 state_in23 state_in24 state_in25 state_in26 state_in27 state_in28 state_in29 state_in30 state_in31 state_in32 state_in33 state_in34 state_in35 state_in36 state_in37 state_in38 state_in39 state_in40 state_in41 state_in42 state_in43 state_in44 state_in45 state_in46 state_in47 state_in48 state_in49 state_in50 state_in51 state_in52 state_in53 state_in54 state_in55 state_in56 state_in57 state_in58 state_in59 state_in60 state_in61 state_in62 state_in63 rkey_u0 rkey_u1 rkey_u2 rkey_u3 rkey_u4 rkey_u5 rkey_u6 rkey_u7 rkey_u8 rkey_u9 rkey_u10 rkey_u11 rkey_u12 rkey_u13 rkey_u14 rkey_u15 rkey_v0 rkey_v1 rkey_v2 rkey_v3 rkey_v4 rkey_v5 rkey_v6 rkey_v7 rkey_v8 rkey_v9 rkey_v10 rkey_v11 rkey_v12 rkey_v13 rkey_v14 rkey_v15 rc0 rc1 rc2 rc3 rc4 rc5
+.outputs state_out0 state_out1 state_out2 state_out3 state_out4 state_out5 state_out6 state_out7 state_out8 state_out9 state_out10 state_out11 state_out12 state_out13 state_out14 state_out15 state_out16 state_out17 state_out18 state_out19 state_out20 state_out21 state_out22 state_out23 state_out24 state_out25 state_out26 state_out27 state_out28 state_out29 state_out30 state_out31 state_out32 state_out33 state_out34 state_out35 state_out36 state_out37 state_out38 state_out39 state_out40 state_out41 state_out42 state_out43 state_out44 state_out45 state_out46 state_out47 state_out48 state_out49 state_out50 state_out51 state_out52 state_out53 state_out54 state_out55 state_out56 state_out57 state_out58 state_out59 state_out60 state_out61 state_out62 state_out63
+
+.names state_in0 state_in1 state_in2 state_in3 sc0
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in0 state_in1 state_in2 state_in3 sc1
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in0 state_in1 state_in2 state_in3 sc2
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in0 state_in1 state_in2 state_in3 sc3
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in4 state_in5 state_in6 state_in7 sc4
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in4 state_in5 state_in6 state_in7 sc5
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in4 state_in5 state_in6 state_in7 sc6
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in4 state_in5 state_in6 state_in7 sc7
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in8 state_in9 state_in10 state_in11 sc8
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in8 state_in9 state_in10 state_in11 sc9
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in8 state_in9 state_in10 state_in11 sc10
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in8 state_in9 state_in10 state_in11 sc11
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in12 state_in13 state_in14 state_in15 sc12
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in12 state_in13 state_in14 state_in15 sc13
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in12 state_in13 state_in14 state_in15 sc14
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in12 state_in13 state_in14 state_in15 sc15
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in16 state_in17 state_in18 state_in19 sc16
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in16 state_in17 state_in18 state_in19 sc17
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in16 state_in17 state_in18 state_in19 sc18
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in16 state_in17 state_in18 state_in19 sc19
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in20 state_in21 state_in22 state_in23 sc20
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in20 state_in21 state_in22 state_in23 sc21
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in20 state_in21 state_in22 state_in23 sc22
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in20 state_in21 state_in22 state_in23 sc23
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in24 state_in25 state_in26 state_in27 sc24
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in24 state_in25 state_in26 state_in27 sc25
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in24 state_in25 state_in26 state_in27 sc26
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in24 state_in25 state_in26 state_in27 sc27
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in28 state_in29 state_in30 state_in31 sc28
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in28 state_in29 state_in30 state_in31 sc29
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in28 state_in29 state_in30 state_in31 sc30
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in28 state_in29 state_in30 state_in31 sc31
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in32 state_in33 state_in34 state_in35 sc32
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in32 state_in33 state_in34 state_in35 sc33
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in32 state_in33 state_in34 state_in35 sc34
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in32 state_in33 state_in34 state_in35 sc35
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in36 state_in37 state_in38 state_in39 sc36
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in36 state_in37 state_in38 state_in39 sc37
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in36 state_in37 state_in38 state_in39 sc38
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in36 state_in37 state_in38 state_in39 sc39
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in40 state_in41 state_in42 state_in43 sc40
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in40 state_in41 state_in42 state_in43 sc41
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in40 state_in41 state_in42 state_in43 sc42
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in40 state_in41 state_in42 state_in43 sc43
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in44 state_in45 state_in46 state_in47 sc44
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in44 state_in45 state_in46 state_in47 sc45
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in44 state_in45 state_in46 state_in47 sc46
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in44 state_in45 state_in46 state_in47 sc47
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in48 state_in49 state_in50 state_in51 sc48
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in48 state_in49 state_in50 state_in51 sc49
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in48 state_in49 state_in50 state_in51 sc50
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in48 state_in49 state_in50 state_in51 sc51
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in52 state_in53 state_in54 state_in55 sc52
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in52 state_in53 state_in54 state_in55 sc53
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in52 state_in53 state_in54 state_in55 sc54
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in52 state_in53 state_in54 state_in55 sc55
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in56 state_in57 state_in58 state_in59 sc56
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in56 state_in57 state_in58 state_in59 sc57
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in56 state_in57 state_in58 state_in59 sc58
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in56 state_in57 state_in58 state_in59 sc59
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names state_in60 state_in61 state_in62 state_in63 sc60
+0001 1
+0011 1
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.names state_in60 state_in61 state_in62 state_in63 sc61
+0010 1
+0011 1
+0100 1
+0101 1
+1001 1
+1011 1
+1100 1
+1111 1
+
+.names state_in60 state_in61 state_in62 state_in63 sc62
+0001 1
+0100 1
+0101 1
+0110 1
+1000 1
+1010 1
+1011 1
+1111 1
+
+.names state_in60 state_in61 state_in62 state_in63 sc63
+0000 1
+0101 1
+0110 1
+0111 1
+1001 1
+1010 1
+1011 1
+1100 1
+
+.names sc0 pb0
+1 1
+
+.names sc4 pb1
+1 1
+
+.names sc8 pb2
+1 1
+
+.names sc12 pb3
+1 1
+
+.names sc16 pb4
+1 1
+
+.names sc20 pb5
+1 1
+
+.names sc24 pb6
+1 1
+
+.names sc28 pb7
+1 1
+
+.names sc32 pb8
+1 1
+
+.names sc36 pb9
+1 1
+
+.names sc40 pb10
+1 1
+
+.names sc44 pb11
+1 1
+
+.names sc48 pb12
+1 1
+
+.names sc52 pb13
+1 1
+
+.names sc56 pb14
+1 1
+
+.names sc60 pb15
+1 1
+
+.names sc1 pb16
+1 1
+
+.names sc5 pb17
+1 1
+
+.names sc9 pb18
+1 1
+
+.names sc13 pb19
+1 1
+
+.names sc17 pb20
+1 1
+
+.names sc21 pb21
+1 1
+
+.names sc25 pb22
+1 1
+
+.names sc29 pb23
+1 1
+
+.names sc33 pb24
+1 1
+
+.names sc37 pb25
+1 1
+
+.names sc41 pb26
+1 1
+
+.names sc45 pb27
+1 1
+
+.names sc49 pb28
+1 1
+
+.names sc53 pb29
+1 1
+
+.names sc57 pb30
+1 1
+
+.names sc61 pb31
+1 1
+
+.names sc2 pb32
+1 1
+
+.names sc6 pb33
+1 1
+
+.names sc10 pb34
+1 1
+
+.names sc14 pb35
+1 1
+
+.names sc18 pb36
+1 1
+
+.names sc22 pb37
+1 1
+
+.names sc26 pb38
+1 1
+
+.names sc30 pb39
+1 1
+
+.names sc34 pb40
+1 1
+
+.names sc38 pb41
+1 1
+
+.names sc42 pb42
+1 1
+
+.names sc46 pb43
+1 1
+
+.names sc50 pb44
+1 1
+
+.names sc54 pb45
+1 1
+
+.names sc58 pb46
+1 1
+
+.names sc62 pb47
+1 1
+
+.names sc3 pb48
+1 1
+
+.names sc7 pb49
+1 1
+
+.names sc11 pb50
+1 1
+
+.names sc15 pb51
+1 1
+
+.names sc19 pb52
+1 1
+
+.names sc23 pb53
+1 1
+
+.names sc27 pb54
+1 1
+
+.names sc31 pb55
+1 1
+
+.names sc35 pb56
+1 1
+
+.names sc39 pb57
+1 1
+
+.names sc43 pb58
+1 1
+
+.names sc47 pb59
+1 1
+
+.names sc51 pb60
+1 1
+
+.names sc55 pb61
+1 1
+
+.names sc59 pb62
+1 1
+
+.names sc63 pb63
+1 1
+
+.names pb0 rkey_u0 ak0
+01 1
+10 1
+
+.names pb1 rkey_v0 ak1
+01 1
+10 1
+
+.names pb2 ak2
+1 1
+
+.names pb3 ak3
+1 1
+
+.names pb4 rkey_u1 ak4
+01 1
+10 1
+
+.names pb5 rkey_v1 ak5
+01 1
+10 1
+
+.names pb6 ak6
+1 1
+
+.names pb7 ak7
+1 1
+
+.names pb8 rkey_u2 ak8
+01 1
+10 1
+
+.names pb9 rkey_v2 ak9
+01 1
+10 1
+
+.names pb10 ak10
+1 1
+
+.names pb11 ak11
+1 1
+
+.names pb12 rkey_u3 ak12
+01 1
+10 1
+
+.names pb13 rkey_v3 ak13
+01 1
+10 1
+
+.names pb14 ak14
+1 1
+
+.names pb15 ak15
+1 1
+
+.names pb16 rkey_u4 ak16
+01 1
+10 1
+
+.names pb17 rkey_v4 ak17
+01 1
+10 1
+
+.names pb18 ak18
+1 1
+
+.names pb19 ak19
+1 1
+
+.names pb20 rkey_u5 ak20
+01 1
+10 1
+
+.names pb21 rkey_v5 ak21
+01 1
+10 1
+
+.names pb22 ak22
+1 1
+
+.names pb23 ak23
+1 1
+
+.names pb24 rkey_u6 ak24
+01 1
+10 1
+
+.names pb25 rkey_v6 ak25
+01 1
+10 1
+
+.names pb26 ak26
+1 1
+
+.names pb27 ak27
+1 1
+
+.names pb28 rkey_u7 ak28
+01 1
+10 1
+
+.names pb29 rkey_v7 ak29
+01 1
+10 1
+
+.names pb30 ak30
+1 1
+
+.names pb31 ak31
+1 1
+
+.names pb32 rkey_u8 ak32
+01 1
+10 1
+
+.names pb33 rkey_v8 ak33
+01 1
+10 1
+
+.names pb34 ak34
+1 1
+
+.names pb35 ak35
+1 1
+
+.names pb36 rkey_u9 ak36
+01 1
+10 1
+
+.names pb37 rkey_v9 ak37
+01 1
+10 1
+
+.names pb38 ak38
+1 1
+
+.names pb39 ak39
+1 1
+
+.names pb40 rkey_u10 ak40
+01 1
+10 1
+
+.names pb41 rkey_v10 ak41
+01 1
+10 1
+
+.names pb42 ak42
+1 1
+
+.names pb43 ak43
+1 1
+
+.names pb44 rkey_u11 ak44
+01 1
+10 1
+
+.names pb45 rkey_v11 ak45
+01 1
+10 1
+
+.names pb46 ak46
+1 1
+
+.names pb47 ak47
+1 1
+
+.names pb48 rkey_u12 ak48
+01 1
+10 1
+
+.names pb49 rkey_v12 ak49
+01 1
+10 1
+
+.names pb50 ak50
+1 1
+
+.names pb51 ak51
+1 1
+
+.names pb52 rkey_u13 ak52
+01 1
+10 1
+
+.names pb53 rkey_v13 ak53
+01 1
+10 1
+
+.names pb54 ak54
+1 1
+
+.names pb55 ak55
+1 1
+
+.names pb56 rkey_u14 ak56
+01 1
+10 1
+
+.names pb57 rkey_v14 ak57
+01 1
+10 1
+
+.names pb58 ak58
+1 1
+
+.names pb59 ak59
+1 1
+
+.names pb60 rkey_u15 ak60
+01 1
+10 1
+
+.names pb61 rkey_v15 ak61
+01 1
+10 1
+
+.names pb62 ak62
+1 1
+
+.names pb63 ak63
+1 1
+
+.names ak63 rc0 state_out63
+01 1
+10 1
+
+.names ak62 rc1 state_out62
+01 1
+10 1
+
+.names ak61 rc2 state_out61
+01 1
+10 1
+
+.names ak60 rc3 state_out60
+01 1
+10 1
+
+.names ak59 rc4 state_out59
+01 1
+10 1
+
+.names ak58 rc5 state_out58
+01 1
+10 1
+
+.names ak0 state_out0
+1 1
+
+.names ak1 state_out1
+1 1
+
+.names ak2 state_out2
+1 1
+
+.names ak3 state_out3
+1 1
+
+.names ak4 state_out4
+1 1
+
+.names ak5 state_out5
+1 1
+
+.names ak6 state_out6
+1 1
+
+.names ak7 state_out7
+1 1
+
+.names ak8 state_out8
+1 1
+
+.names ak9 state_out9
+1 1
+
+.names ak10 state_out10
+1 1
+
+.names ak11 state_out11
+1 1
+
+.names ak12 state_out12
+1 1
+
+.names ak13 state_out13
+1 1
+
+.names ak14 state_out14
+1 1
+
+.names ak15 state_out15
+1 1
+
+.names ak16 state_out16
+1 1
+
+.names ak17 state_out17
+1 1
+
+.names ak18 state_out18
+1 1
+
+.names ak19 state_out19
+1 1
+
+.names ak20 state_out20
+1 1
+
+.names ak21 state_out21
+1 1
+
+.names ak22 state_out22
+1 1
+
+.names ak23 state_out23
+1 1
+
+.names ak24 state_out24
+1 1
+
+.names ak25 state_out25
+1 1
+
+.names ak26 state_out26
+1 1
+
+.names ak27 state_out27
+1 1
+
+.names ak28 state_out28
+1 1
+
+.names ak29 state_out29
+1 1
+
+.names ak30 state_out30
+1 1
+
+.names ak31 state_out31
+1 1
+
+.names ak32 state_out32
+1 1
+
+.names ak33 state_out33
+1 1
+
+.names ak34 state_out34
+1 1
+
+.names ak35 state_out35
+1 1
+
+.names ak36 state_out36
+1 1
+
+.names ak37 state_out37
+1 1
+
+.names ak38 state_out38
+1 1
+
+.names ak39 state_out39
+1 1
+
+.names ak40 state_out40
+1 1
+
+.names ak41 state_out41
+1 1
+
+.names ak42 state_out42
+1 1
+
+.names ak43 state_out43
+1 1
+
+.names ak44 state_out44
+1 1
+
+.names ak45 state_out45
+1 1
+
+.names ak46 state_out46
+1 1
+
+.names ak47 state_out47
+1 1
+
+.names ak48 state_out48
+1 1
+
+.names ak49 state_out49
+1 1
+
+.names ak50 state_out50
+1 1
+
+.names ak51 state_out51
+1 1
+
+.names ak52 state_out52
+1 1
+
+.names ak53 state_out53
+1 1
+
+.names ak54 state_out54
+1 1
+
+.names ak55 state_out55
+1 1
+
+.names ak56 state_out56
+1 1
+
+.names ak57 state_out57
+1 1
+
+.end

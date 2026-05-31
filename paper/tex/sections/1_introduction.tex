@@ -1,0 +1,63 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Differential Fault Analysis recovers cryptographic secrets by inducing
+transient faults during cipher execution and comparing corrupted outputs
+against correct ones~\cite{biham1997dfa,bareltal2006fault}. A natural
+way to characterize a hardware implementation is therefore to inject a
+single fault at each gate output and measure how often that fault reaches
+a primary output. Recent synthesis-aware fault studies use exactly this
+kind of gate-level campaign to compare representations such as LUT
+netlists, AND-inverter graphs, majority-inverter graphs, and
+technology-mapped FPGA circuits.
+
+This paper asks a simple methodological question: when such a campaign
+reports that one synthesis representation has lower per-vector fault
+observability than another, how much of the effect is caused by the
+logic primitive, and how much is caused by the granularity of the
+netlist being measured? The distinction matters. A wide truth-table LUT
+that directly drives a primary output contributes one observable fault
+site with detection probability one. Decomposing the same function into
+many small gates creates many interior sites whose effects can be masked
+downstream. A metric averaged over all gate sites can therefore move
+substantially even when the realized Boolean function and attacker-facing
+target layer have not become more fault resistant.
+
+We evaluate this question on 15 cipher primitives synthesized into three
+representations: the LUT-style AOIG baseline produced by Yosys, a
+decomposed 2-input AIG as a comparable small-gate control, and a
+3-input MIG. All three are subjected to the same single gate-output
+\bitflip{} campaign. The resulting observation is narrow but important:
+the reported AOIG-to-MIG \AvgDP{} reduction is reproducible, but it
+does not survive a decomposed-AIG baseline at comparable granularity.
+
+\subsection*{Contributions}
+
+\begin{itemize}
+  \item We show that the AOIG-to-MIG \AvgDP{} reduction reverses sign
+        under a decomposed-AIG baseline at comparable small-gate granularity:
+        LUT$\to$MIG gives a mean $13.0\%$ reduction, while AIG$\to$MIG
+        gives a mean $21.4\%$ increase with $0/15$ circuits reduced.
+  \item As a granularity control, we measure target-layer \AvgDP{}
+        (faults restricted to output-driving gates). This yields \AvgDP{}
+        $=1.000$ across all three representations, consistent with the
+        interpretation that the all-site difference comes from interior
+        fault-site population mix, not from any change in the
+        attacker-facing output layer.
+  \item We report one result that survives the controls: ARX primitives exhibit
+        approximately $1.9\times$ broader output corruption per detected
+        fault than substitution-based primitives across representations.
+  \item We release the full artifact: netlists, fault simulator, frozen
+        JSON outputs, generated tables/figures, and a script that checks
+        the paper's quoted summary numbers.\footnote{Artifact:
+        \texttt{[artifact anonymized for double-blind review]}.}
+\end{itemize}
+
+The rest of the paper proceeds as follows. \S\ref{sec:background}
+summarizes MIG synthesis and DFA observability metrics.
+\S\ref{sec:methodology} defines the benchmark, fault model, and
+granularity-controlled methodology. \S\ref{sec:results} gives the
+baseline-flip result, the invariant target-layer result, and the stable
+architecture-level finding. \S\ref{sec:discussion} summarizes
+reporting guidance and remaining limits, and \S\ref{sec:conclusion}
+concludes.

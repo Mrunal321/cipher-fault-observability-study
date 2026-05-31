@@ -1,0 +1,55 @@
+.model keccak_chi_5bit
+.inputs x0 x1 x2 x3 x4
+.outputs y0 y1 y2 y3 y4
+
+.names x1 chi_not0
+0 1
+
+.names chi_not0 x2 chi_and0
+11 1
+
+.names x0 chi_and0 y0
+01 1
+10 1
+
+.names x2 chi_not1
+0 1
+
+.names chi_not1 x3 chi_and1
+11 1
+
+.names x1 chi_and1 y1
+01 1
+10 1
+
+.names x3 chi_not2
+0 1
+
+.names chi_not2 x4 chi_and2
+11 1
+
+.names x2 chi_and2 y2
+01 1
+10 1
+
+.names x4 chi_not3
+0 1
+
+.names chi_not3 x0 chi_and3
+11 1
+
+.names x3 chi_and3 y3
+01 1
+10 1
+
+.names x0 chi_not4
+0 1
+
+.names chi_not4 x1 chi_and4
+11 1
+
+.names x4 chi_and4 y4
+01 1
+10 1
+
+.end

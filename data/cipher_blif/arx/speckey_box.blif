@@ -1,0 +1,658 @@
+.model speckey_box
+.inputs pt0 pt1 pt2 pt3 pt4 pt5 pt6 pt7 pt8 pt9 pt10 pt11 pt12 pt13 pt14 pt15 pt16 pt17 pt18 pt19 pt20 pt21 pt22 pt23 pt24 pt25 pt26 pt27 pt28 pt29 pt30 pt31 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18 k19 k20 k21 k22 k23 k24 k25 k26 k27 k28 k29 k30 k31
+.outputs out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 out11 out12 out13 out14 out15 out16 out17 out18 out19 out20 out21 out22 out23 out24 out25 out26 out27 out28 out29 out30 out31
+
+.names pt0 k0 sk_xk0_0
+01 1
+10 1
+
+.names pt1 k1 sk_xk0_1
+01 1
+10 1
+
+.names pt2 k2 sk_xk0_2
+01 1
+10 1
+
+.names pt3 k3 sk_xk0_3
+01 1
+10 1
+
+.names pt4 k4 sk_xk0_4
+01 1
+10 1
+
+.names pt5 k5 sk_xk0_5
+01 1
+10 1
+
+.names pt6 k6 sk_xk0_6
+01 1
+10 1
+
+.names pt7 k7 sk_xk0_7
+01 1
+10 1
+
+.names pt8 k8 sk_xk0_8
+01 1
+10 1
+
+.names pt9 k9 sk_xk0_9
+01 1
+10 1
+
+.names pt10 k10 sk_xk0_10
+01 1
+10 1
+
+.names pt11 k11 sk_xk0_11
+01 1
+10 1
+
+.names pt12 k12 sk_xk0_12
+01 1
+10 1
+
+.names pt13 k13 sk_xk0_13
+01 1
+10 1
+
+.names pt14 k14 sk_xk0_14
+01 1
+10 1
+
+.names pt15 k15 sk_xk0_15
+01 1
+10 1
+
+.names pt16 k16 sk_yk0_0
+01 1
+10 1
+
+.names pt17 k17 sk_yk0_1
+01 1
+10 1
+
+.names pt18 k18 sk_yk0_2
+01 1
+10 1
+
+.names pt19 k19 sk_yk0_3
+01 1
+10 1
+
+.names pt20 k20 sk_yk0_4
+01 1
+10 1
+
+.names pt21 k21 sk_yk0_5
+01 1
+10 1
+
+.names pt22 k22 sk_yk0_6
+01 1
+10 1
+
+.names pt23 k23 sk_yk0_7
+01 1
+10 1
+
+.names pt24 k24 sk_yk0_8
+01 1
+10 1
+
+.names pt25 k25 sk_yk0_9
+01 1
+10 1
+
+.names pt26 k26 sk_yk0_10
+01 1
+10 1
+
+.names pt27 k27 sk_yk0_11
+01 1
+10 1
+
+.names pt28 k28 sk_yk0_12
+01 1
+10 1
+
+.names pt29 k29 sk_yk0_13
+01 1
+10 1
+
+.names pt30 k30 sk_yk0_14
+01 1
+10 1
+
+.names pt31 k31 sk_yk0_15
+01 1
+10 1
+
+.names sk_add_c0
+
+.names sk_xk0_8 sk_yk0_15 sk_add_c0 sk_add_s15
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_8 sk_yk0_15 sk_add_c0 sk_add_c1
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_7 sk_yk0_14 sk_add_c1 sk_add_s14
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_7 sk_yk0_14 sk_add_c1 sk_add_c2
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_6 sk_yk0_13 sk_add_c2 sk_add_s13
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_6 sk_yk0_13 sk_add_c2 sk_add_c3
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_5 sk_yk0_12 sk_add_c3 sk_add_s12
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_5 sk_yk0_12 sk_add_c3 sk_add_c4
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_4 sk_yk0_11 sk_add_c4 sk_add_s11
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_4 sk_yk0_11 sk_add_c4 sk_add_c5
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_3 sk_yk0_10 sk_add_c5 sk_add_s10
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_3 sk_yk0_10 sk_add_c5 sk_add_c6
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_2 sk_yk0_9 sk_add_c6 sk_add_s9
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_2 sk_yk0_9 sk_add_c6 sk_add_c7
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_1 sk_yk0_8 sk_add_c7 sk_add_s8
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_1 sk_yk0_8 sk_add_c7 sk_add_c8
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_0 sk_yk0_7 sk_add_c8 sk_add_s7
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_0 sk_yk0_7 sk_add_c8 sk_add_c9
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_15 sk_yk0_6 sk_add_c9 sk_add_s6
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_15 sk_yk0_6 sk_add_c9 sk_add_c10
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_14 sk_yk0_5 sk_add_c10 sk_add_s5
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_14 sk_yk0_5 sk_add_c10 sk_add_c11
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_13 sk_yk0_4 sk_add_c11 sk_add_s4
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_13 sk_yk0_4 sk_add_c11 sk_add_c12
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_12 sk_yk0_3 sk_add_c12 sk_add_s3
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_12 sk_yk0_3 sk_add_c12 sk_add_c13
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_11 sk_yk0_2 sk_add_c13 sk_add_s2
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_11 sk_yk0_2 sk_add_c13 sk_add_c14
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_10 sk_yk0_1 sk_add_c14 sk_add_s1
+001 1
+010 1
+100 1
+111 1
+
+.names sk_xk0_10 sk_yk0_1 sk_add_c14 sk_add_c15
+11- 1
+1-1 1
+-11 1
+
+.names sk_xk0_9 sk_yk0_0 sk_add_c15 sk_add_s0
+001 1
+010 1
+100 1
+111 1
+
+.names sk_add_s0 k0 sk_x1_0
+01 1
+10 1
+
+.names sk_add_s1 k1 sk_x1_1
+01 1
+10 1
+
+.names sk_add_s2 k2 sk_x1_2
+01 1
+10 1
+
+.names sk_add_s3 k3 sk_x1_3
+01 1
+10 1
+
+.names sk_add_s4 k4 sk_x1_4
+01 1
+10 1
+
+.names sk_add_s5 k5 sk_x1_5
+01 1
+10 1
+
+.names sk_add_s6 k6 sk_x1_6
+01 1
+10 1
+
+.names sk_add_s7 k7 sk_x1_7
+01 1
+10 1
+
+.names sk_add_s8 k8 sk_x1_8
+01 1
+10 1
+
+.names sk_add_s9 k9 sk_x1_9
+01 1
+10 1
+
+.names sk_add_s10 k10 sk_x1_10
+01 1
+10 1
+
+.names sk_add_s11 k11 sk_x1_11
+01 1
+10 1
+
+.names sk_add_s12 k12 sk_x1_12
+01 1
+10 1
+
+.names sk_add_s13 k13 sk_x1_13
+01 1
+10 1
+
+.names sk_add_s14 k14 sk_x1_14
+01 1
+10 1
+
+.names sk_add_s15 k15 sk_x1_15
+01 1
+10 1
+
+.names sk_yk0_2 sk_x1_0 sk_y1_0
+01 1
+10 1
+
+.names sk_yk0_3 sk_x1_1 sk_y1_1
+01 1
+10 1
+
+.names sk_yk0_4 sk_x1_2 sk_y1_2
+01 1
+10 1
+
+.names sk_yk0_5 sk_x1_3 sk_y1_3
+01 1
+10 1
+
+.names sk_yk0_6 sk_x1_4 sk_y1_4
+01 1
+10 1
+
+.names sk_yk0_7 sk_x1_5 sk_y1_5
+01 1
+10 1
+
+.names sk_yk0_8 sk_x1_6 sk_y1_6
+01 1
+10 1
+
+.names sk_yk0_9 sk_x1_7 sk_y1_7
+01 1
+10 1
+
+.names sk_yk0_10 sk_x1_8 sk_y1_8
+01 1
+10 1
+
+.names sk_yk0_11 sk_x1_9 sk_y1_9
+01 1
+10 1
+
+.names sk_yk0_12 sk_x1_10 sk_y1_10
+01 1
+10 1
+
+.names sk_yk0_13 sk_x1_11 sk_y1_11
+01 1
+10 1
+
+.names sk_yk0_14 sk_x1_12 sk_y1_12
+01 1
+10 1
+
+.names sk_yk0_15 sk_x1_13 sk_y1_13
+01 1
+10 1
+
+.names sk_yk0_0 sk_x1_14 sk_y1_14
+01 1
+10 1
+
+.names sk_yk0_1 sk_x1_15 sk_y1_15
+01 1
+10 1
+
+.names sk_x1_0 k16 sk_xo_0
+01 1
+10 1
+
+.names sk_x1_1 k17 sk_xo_1
+01 1
+10 1
+
+.names sk_x1_2 k18 sk_xo_2
+01 1
+10 1
+
+.names sk_x1_3 k19 sk_xo_3
+01 1
+10 1
+
+.names sk_x1_4 k20 sk_xo_4
+01 1
+10 1
+
+.names sk_x1_5 k21 sk_xo_5
+01 1
+10 1
+
+.names sk_x1_6 k22 sk_xo_6
+01 1
+10 1
+
+.names sk_x1_7 k23 sk_xo_7
+01 1
+10 1
+
+.names sk_x1_8 k24 sk_xo_8
+01 1
+10 1
+
+.names sk_x1_9 k25 sk_xo_9
+01 1
+10 1
+
+.names sk_x1_10 k26 sk_xo_10
+01 1
+10 1
+
+.names sk_x1_11 k27 sk_xo_11
+01 1
+10 1
+
+.names sk_x1_12 k28 sk_xo_12
+01 1
+10 1
+
+.names sk_x1_13 k29 sk_xo_13
+01 1
+10 1
+
+.names sk_x1_14 k30 sk_xo_14
+01 1
+10 1
+
+.names sk_x1_15 k31 sk_xo_15
+01 1
+10 1
+
+.names sk_y1_0 k0 sk_yo_0
+01 1
+10 1
+
+.names sk_y1_1 k1 sk_yo_1
+01 1
+10 1
+
+.names sk_y1_2 k2 sk_yo_2
+01 1
+10 1
+
+.names sk_y1_3 k3 sk_yo_3
+01 1
+10 1
+
+.names sk_y1_4 k4 sk_yo_4
+01 1
+10 1
+
+.names sk_y1_5 k5 sk_yo_5
+01 1
+10 1
+
+.names sk_y1_6 k6 sk_yo_6
+01 1
+10 1
+
+.names sk_y1_7 k7 sk_yo_7
+01 1
+10 1
+
+.names sk_y1_8 k8 sk_yo_8
+01 1
+10 1
+
+.names sk_y1_9 k9 sk_yo_9
+01 1
+10 1
+
+.names sk_y1_10 k10 sk_yo_10
+01 1
+10 1
+
+.names sk_y1_11 k11 sk_yo_11
+01 1
+10 1
+
+.names sk_y1_12 k12 sk_yo_12
+01 1
+10 1
+
+.names sk_y1_13 k13 sk_yo_13
+01 1
+10 1
+
+.names sk_y1_14 k14 sk_yo_14
+01 1
+10 1
+
+.names sk_y1_15 k15 sk_yo_15
+01 1
+10 1
+
+.names sk_xo_0 out0
+1 1
+
+.names sk_xo_1 out1
+1 1
+
+.names sk_xo_2 out2
+1 1
+
+.names sk_xo_3 out3
+1 1
+
+.names sk_xo_4 out4
+1 1
+
+.names sk_xo_5 out5
+1 1
+
+.names sk_xo_6 out6
+1 1
+
+.names sk_xo_7 out7
+1 1
+
+.names sk_xo_8 out8
+1 1
+
+.names sk_xo_9 out9
+1 1
+
+.names sk_xo_10 out10
+1 1
+
+.names sk_xo_11 out11
+1 1
+
+.names sk_xo_12 out12
+1 1
+
+.names sk_xo_13 out13
+1 1
+
+.names sk_xo_14 out14
+1 1
+
+.names sk_xo_15 out15
+1 1
+
+.names sk_yo_0 out16
+1 1
+
+.names sk_yo_1 out17
+1 1
+
+.names sk_yo_2 out18
+1 1
+
+.names sk_yo_3 out19
+1 1
+
+.names sk_yo_4 out20
+1 1
+
+.names sk_yo_5 out21
+1 1
+
+.names sk_yo_6 out22
+1 1
+
+.names sk_yo_7 out23
+1 1
+
+.names sk_yo_8 out24
+1 1
+
+.names sk_yo_9 out25
+1 1
+
+.names sk_yo_10 out26
+1 1
+
+.names sk_yo_11 out27
+1 1
+
+.names sk_yo_12 out28
+1 1
+
+.names sk_yo_13 out29
+1 1
+
+.names sk_yo_14 out30
+1 1
+
+.names sk_yo_15 out31
+1 1
+
+.end

@@ -1,0 +1,293 @@
+.model simon32_round
+.inputs a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15
+.outputs a_out0 a_out1 a_out2 a_out3 a_out4 a_out5 a_out6 a_out7 a_out8 a_out9 a_out10 a_out11 a_out12 a_out13 a_out14 a_out15 b_out0 b_out1 b_out2 b_out3 b_out4 b_out5 b_out6 b_out7 b_out8 b_out9 b_out10 b_out11 b_out12 b_out13 b_out14 b_out15
+
+.names b1 b8 and0
+11 1
+
+.names b2 b9 and1
+11 1
+
+.names b3 b10 and2
+11 1
+
+.names b4 b11 and3
+11 1
+
+.names b5 b12 and4
+11 1
+
+.names b6 b13 and5
+11 1
+
+.names b7 b14 and6
+11 1
+
+.names b8 b15 and7
+11 1
+
+.names b9 b0 and8
+11 1
+
+.names b10 b1 and9
+11 1
+
+.names b11 b2 and10
+11 1
+
+.names b12 b3 and11
+11 1
+
+.names b13 b4 and12
+11 1
+
+.names b14 b5 and13
+11 1
+
+.names b15 b6 and14
+11 1
+
+.names b0 b7 and15
+11 1
+
+.names and0 b2 fb0
+01 1
+10 1
+
+.names and1 b3 fb1
+01 1
+10 1
+
+.names and2 b4 fb2
+01 1
+10 1
+
+.names and3 b5 fb3
+01 1
+10 1
+
+.names and4 b6 fb4
+01 1
+10 1
+
+.names and5 b7 fb5
+01 1
+10 1
+
+.names and6 b8 fb6
+01 1
+10 1
+
+.names and7 b9 fb7
+01 1
+10 1
+
+.names and8 b10 fb8
+01 1
+10 1
+
+.names and9 b11 fb9
+01 1
+10 1
+
+.names and10 b12 fb10
+01 1
+10 1
+
+.names and11 b13 fb11
+01 1
+10 1
+
+.names and12 b14 fb12
+01 1
+10 1
+
+.names and13 b15 fb13
+01 1
+10 1
+
+.names and14 b0 fb14
+01 1
+10 1
+
+.names and15 b1 fb15
+01 1
+10 1
+
+.names a0 fb0 afb0
+01 1
+10 1
+
+.names a1 fb1 afb1
+01 1
+10 1
+
+.names a2 fb2 afb2
+01 1
+10 1
+
+.names a3 fb3 afb3
+01 1
+10 1
+
+.names a4 fb4 afb4
+01 1
+10 1
+
+.names a5 fb5 afb5
+01 1
+10 1
+
+.names a6 fb6 afb6
+01 1
+10 1
+
+.names a7 fb7 afb7
+01 1
+10 1
+
+.names a8 fb8 afb8
+01 1
+10 1
+
+.names a9 fb9 afb9
+01 1
+10 1
+
+.names a10 fb10 afb10
+01 1
+10 1
+
+.names a11 fb11 afb11
+01 1
+10 1
+
+.names a12 fb12 afb12
+01 1
+10 1
+
+.names a13 fb13 afb13
+01 1
+10 1
+
+.names a14 fb14 afb14
+01 1
+10 1
+
+.names a15 fb15 afb15
+01 1
+10 1
+
+.names afb0 k0 a_out0
+01 1
+10 1
+
+.names afb1 k1 a_out1
+01 1
+10 1
+
+.names afb2 k2 a_out2
+01 1
+10 1
+
+.names afb3 k3 a_out3
+01 1
+10 1
+
+.names afb4 k4 a_out4
+01 1
+10 1
+
+.names afb5 k5 a_out5
+01 1
+10 1
+
+.names afb6 k6 a_out6
+01 1
+10 1
+
+.names afb7 k7 a_out7
+01 1
+10 1
+
+.names afb8 k8 a_out8
+01 1
+10 1
+
+.names afb9 k9 a_out9
+01 1
+10 1
+
+.names afb10 k10 a_out10
+01 1
+10 1
+
+.names afb11 k11 a_out11
+01 1
+10 1
+
+.names afb12 k12 a_out12
+01 1
+10 1
+
+.names afb13 k13 a_out13
+01 1
+10 1
+
+.names afb14 k14 a_out14
+01 1
+10 1
+
+.names afb15 k15 a_out15
+01 1
+10 1
+
+.names b0 b_out0
+1 1
+
+.names b1 b_out1
+1 1
+
+.names b2 b_out2
+1 1
+
+.names b3 b_out3
+1 1
+
+.names b4 b_out4
+1 1
+
+.names b5 b_out5
+1 1
+
+.names b6 b_out6
+1 1
+
+.names b7 b_out7
+1 1
+
+.names b8 b_out8
+1 1
+
+.names b9 b_out9
+1 1
+
+.names b10 b_out10
+1 1
+
+.names b11 b_out11
+1 1
+
+.names b12 b_out12
+1 1
+
+.names b13 b_out13
+1 1
+
+.names b14 b_out14
+1 1
+
+.names b15 b_out15
+1 1
+
+.end

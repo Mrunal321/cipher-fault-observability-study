@@ -1,0 +1,527 @@
+[
+  {
+    "circuit": "present_sbox",
+    "flows": {
+      "aoig": {
+        "total_faults": 7,
+        "detectable": 4,
+        "masked": 3,
+        "fault_coverage": 57.14,
+        "masking_rate": 42.86,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 16
+      },
+      "mig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0079,
+        "avg_det_prob": 0.7853,
+        "n_test_vectors": 16
+      },
+      "mmig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0079,
+        "avg_det_prob": 0.7853,
+        "n_test_vectors": 16
+      }
+    }
+  },
+  {
+    "circuit": "gift_sbox",
+    "flows": {
+      "aoig": {
+        "total_faults": 7,
+        "detectable": 4,
+        "masked": 3,
+        "fault_coverage": 57.14,
+        "masking_rate": 42.86,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 16
+      },
+      "mig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8315,
+        "n_test_vectors": 16
+      },
+      "mmig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8315,
+        "n_test_vectors": 16
+      }
+    }
+  },
+  {
+    "circuit": "prince_sbox",
+    "flows": {
+      "aoig": {
+        "total_faults": 7,
+        "detectable": 4,
+        "masked": 3,
+        "fault_coverage": 57.14,
+        "masking_rate": 42.86,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 16
+      },
+      "mig": {
+        "total_faults": 21,
+        "detectable": 19,
+        "masked": 2,
+        "fault_coverage": 90.48,
+        "masking_rate": 9.52,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.7632,
+        "n_test_vectors": 16
+      },
+      "mmig": {
+        "total_faults": 21,
+        "detectable": 19,
+        "masked": 2,
+        "fault_coverage": 90.48,
+        "masking_rate": 9.52,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.7632,
+        "n_test_vectors": 16
+      }
+    }
+  },
+  {
+    "circuit": "prince_sbox_inv",
+    "flows": {
+      "aoig": {
+        "total_faults": 7,
+        "detectable": 4,
+        "masked": 3,
+        "fault_coverage": 57.14,
+        "masking_rate": 42.86,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 16
+      },
+      "mig": {
+        "total_faults": 22,
+        "detectable": 20,
+        "masked": 2,
+        "fault_coverage": 90.91,
+        "masking_rate": 9.09,
+        "avg_breadth": 1.0446,
+        "avg_det_prob": 0.7688,
+        "n_test_vectors": 16
+      },
+      "mmig": {
+        "total_faults": 22,
+        "detectable": 20,
+        "masked": 2,
+        "fault_coverage": 90.91,
+        "masking_rate": 9.09,
+        "avg_breadth": 1.0446,
+        "avg_det_prob": 0.7688,
+        "n_test_vectors": 16
+      }
+    }
+  },
+  {
+    "circuit": "gift_subcells",
+    "flows": {
+      "aoig": {
+        "total_faults": 67,
+        "detectable": 64,
+        "masked": 3,
+        "fault_coverage": 95.52,
+        "masking_rate": 4.48,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 370,
+        "detectable": 368,
+        "masked": 2,
+        "fault_coverage": 99.46,
+        "masking_rate": 0.54,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8316,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 370,
+        "detectable": 368,
+        "masked": 2,
+        "fault_coverage": 99.46,
+        "masking_rate": 0.54,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8315,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "gift_round",
+    "flows": {
+      "aoig": {
+        "total_faults": 259,
+        "detectable": 256,
+        "masked": 3,
+        "fault_coverage": 98.84,
+        "masking_rate": 1.16,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 478,
+        "detectable": 476,
+        "masked": 2,
+        "fault_coverage": 99.58,
+        "masking_rate": 0.42,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8319,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 478,
+        "detectable": 476,
+        "masked": 2,
+        "fault_coverage": 99.58,
+        "masking_rate": 0.42,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.832,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "present_round",
+    "flows": {
+      "aoig": {
+        "total_faults": 195,
+        "detectable": 192,
+        "masked": 3,
+        "fault_coverage": 98.46,
+        "masking_rate": 1.54,
+        "avg_breadth": 1.5002,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 562,
+        "detectable": 560,
+        "masked": 2,
+        "fault_coverage": 99.64,
+        "masking_rate": 0.36,
+        "avg_breadth": 1.5196,
+        "avg_det_prob": 0.8018,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 562,
+        "detectable": 560,
+        "masked": 2,
+        "fault_coverage": 99.64,
+        "masking_rate": 0.36,
+        "avg_breadth": 1.5195,
+        "avg_det_prob": 0.8016,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "prince_mprime",
+    "flows": {
+      "aoig": {
+        "total_faults": 99,
+        "detectable": 96,
+        "masked": 3,
+        "fault_coverage": 96.97,
+        "masking_rate": 3.03,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 162,
+        "detectable": 160,
+        "masked": 2,
+        "fault_coverage": 98.77,
+        "masking_rate": 1.23,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8998,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 162,
+        "detectable": 160,
+        "masked": 2,
+        "fault_coverage": 98.77,
+        "masking_rate": 1.23,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.9004,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "simon32_round",
+    "flows": {
+      "aoig": {
+        "total_faults": 83,
+        "detectable": 80,
+        "masked": 3,
+        "fault_coverage": 96.39,
+        "masking_rate": 3.61,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 146,
+        "detectable": 144,
+        "masked": 2,
+        "fault_coverage": 98.63,
+        "masking_rate": 1.37,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8887,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 146,
+        "detectable": 144,
+        "masked": 2,
+        "fault_coverage": 98.63,
+        "masking_rate": 1.37,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8889,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "simon64_round",
+    "flows": {
+      "aoig": {
+        "total_faults": 163,
+        "detectable": 160,
+        "masked": 3,
+        "fault_coverage": 98.16,
+        "masking_rate": 1.84,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 290,
+        "detectable": 288,
+        "masked": 2,
+        "fault_coverage": 99.31,
+        "masking_rate": 0.69,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.889,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 290,
+        "detectable": 288,
+        "masked": 2,
+        "fault_coverage": 99.31,
+        "masking_rate": 0.69,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.889,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "keccak_chi_5bit",
+    "flows": {
+      "aoig": {
+        "total_faults": 18,
+        "detectable": 15,
+        "masked": 3,
+        "fault_coverage": 83.33,
+        "masking_rate": 16.67,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8333,
+        "n_test_vectors": 32
+      },
+      "mig": {
+        "total_faults": 27,
+        "detectable": 25,
+        "masked": 2,
+        "fault_coverage": 92.59,
+        "masking_rate": 7.41,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.9,
+        "n_test_vectors": 32
+      },
+      "mmig": {
+        "total_faults": 27,
+        "detectable": 25,
+        "masked": 2,
+        "fault_coverage": 92.59,
+        "masking_rate": 7.41,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.9,
+        "n_test_vectors": 32
+      }
+    }
+  },
+  {
+    "circuit": "keccak_chi_64row",
+    "flows": {
+      "aoig": {
+        "total_faults": 963,
+        "detectable": 960,
+        "masked": 3,
+        "fault_coverage": 99.69,
+        "masking_rate": 0.31,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.8334,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 1602,
+        "detectable": 1600,
+        "masked": 2,
+        "fault_coverage": 99.88,
+        "masking_rate": 0.12,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.9,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 1602,
+        "detectable": 1600,
+        "masked": 2,
+        "fault_coverage": 99.88,
+        "masking_rate": 0.12,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 0.9,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "speckey_box",
+    "flows": {
+      "aoig": {
+        "total_faults": 163,
+        "detectable": 160,
+        "masked": 3,
+        "fault_coverage": 98.16,
+        "masking_rate": 1.84,
+        "avg_breadth": 2.0814,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 285,
+        "detectable": 283,
+        "masked": 2,
+        "fault_coverage": 99.3,
+        "masking_rate": 0.7,
+        "avg_breadth": 2.2376,
+        "avg_det_prob": 0.8611,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 285,
+        "detectable": 283,
+        "masked": 2,
+        "fault_coverage": 99.3,
+        "masking_rate": 0.7,
+        "avg_breadth": 2.237,
+        "avg_det_prob": 0.8609,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "speck32_round",
+    "flows": {
+      "aoig": {
+        "total_faults": 99,
+        "detectable": 96,
+        "masked": 3,
+        "fault_coverage": 96.97,
+        "masking_rate": 3.03,
+        "avg_breadth": 1.7898,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 190,
+        "detectable": 188,
+        "masked": 2,
+        "fault_coverage": 98.95,
+        "masking_rate": 1.05,
+        "avg_breadth": 1.7125,
+        "avg_det_prob": 0.8751,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 190,
+        "detectable": 188,
+        "masked": 2,
+        "fault_coverage": 98.95,
+        "masking_rate": 1.05,
+        "avg_breadth": 1.7114,
+        "avg_det_prob": 0.8751,
+        "n_test_vectors": 10000
+      }
+    }
+  },
+  {
+    "circuit": "marx2_box",
+    "flows": {
+      "aoig": {
+        "total_faults": 147,
+        "detectable": 144,
+        "masked": 3,
+        "fault_coverage": 97.96,
+        "masking_rate": 2.04,
+        "avg_breadth": 2.0029,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 10000
+      },
+      "mig": {
+        "total_faults": 284,
+        "detectable": 282,
+        "masked": 2,
+        "fault_coverage": 99.3,
+        "masking_rate": 0.7,
+        "avg_breadth": 2.2174,
+        "avg_det_prob": 0.8618,
+        "n_test_vectors": 10000
+      },
+      "mmig": {
+        "total_faults": 284,
+        "detectable": 282,
+        "masked": 2,
+        "fault_coverage": 99.3,
+        "masking_rate": 0.7,
+        "avg_breadth": 2.2211,
+        "avg_det_prob": 0.8617,
+        "n_test_vectors": 10000
+      }
+    }
+  }
+]

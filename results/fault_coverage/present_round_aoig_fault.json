@@ -1,0 +1,10 @@
+{
+  "total_faults": 195,
+  "detectable": 192,
+  "masked": 3,
+  "fault_coverage": 98.46,
+  "masking_rate": 1.54,
+  "avg_breadth": 1.5002,
+  "avg_det_prob": 1.0,
+  "n_test_vectors": 10000
+}

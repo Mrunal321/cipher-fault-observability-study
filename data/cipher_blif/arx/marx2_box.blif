@@ -1,0 +1,591 @@
+.model marx2_box
+.inputs pt0 pt1 pt2 pt3 pt4 pt5 pt6 pt7 pt8 pt9 pt10 pt11 pt12 pt13 pt14 pt15 pt16 pt17 pt18 pt19 pt20 pt21 pt22 pt23 pt24 pt25 pt26 pt27 pt28 pt29 pt30 pt31 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18 k19 k20 k21 k22 k23 k24 k25 k26 k27 k28 k29 k30 k31
+.outputs out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 out11 out12 out13 out14 out15 out16 out17 out18 out19 out20 out21 out22 out23 out24 out25 out26 out27 out28 out29 out30 out31
+
+.names pt0 k0 mx_a0_0
+01 1
+10 1
+
+.names pt1 k1 mx_a0_1
+01 1
+10 1
+
+.names pt2 k2 mx_a0_2
+01 1
+10 1
+
+.names pt3 k3 mx_a0_3
+01 1
+10 1
+
+.names pt4 k4 mx_a0_4
+01 1
+10 1
+
+.names pt5 k5 mx_a0_5
+01 1
+10 1
+
+.names pt6 k6 mx_a0_6
+01 1
+10 1
+
+.names pt7 k7 mx_a0_7
+01 1
+10 1
+
+.names pt8 k8 mx_b0_0
+01 1
+10 1
+
+.names pt9 k9 mx_b0_1
+01 1
+10 1
+
+.names pt10 k10 mx_b0_2
+01 1
+10 1
+
+.names pt11 k11 mx_b0_3
+01 1
+10 1
+
+.names pt12 k12 mx_b0_4
+01 1
+10 1
+
+.names pt13 k13 mx_b0_5
+01 1
+10 1
+
+.names pt14 k14 mx_b0_6
+01 1
+10 1
+
+.names pt15 k15 mx_b0_7
+01 1
+10 1
+
+.names pt16 k16 mx_c0_0
+01 1
+10 1
+
+.names pt17 k17 mx_c0_1
+01 1
+10 1
+
+.names pt18 k18 mx_c0_2
+01 1
+10 1
+
+.names pt19 k19 mx_c0_3
+01 1
+10 1
+
+.names pt20 k20 mx_c0_4
+01 1
+10 1
+
+.names pt21 k21 mx_c0_5
+01 1
+10 1
+
+.names pt22 k22 mx_c0_6
+01 1
+10 1
+
+.names pt23 k23 mx_c0_7
+01 1
+10 1
+
+.names pt24 k24 mx_d0_0
+01 1
+10 1
+
+.names pt25 k25 mx_d0_1
+01 1
+10 1
+
+.names pt26 k26 mx_d0_2
+01 1
+10 1
+
+.names pt27 k27 mx_d0_3
+01 1
+10 1
+
+.names pt28 k28 mx_d0_4
+01 1
+10 1
+
+.names pt29 k29 mx_d0_5
+01 1
+10 1
+
+.names pt30 k30 mx_d0_6
+01 1
+10 1
+
+.names pt31 k31 mx_d0_7
+01 1
+10 1
+
+.names mx_add0_c0
+
+.names mx_a0_7 mx_b0_0 mx_add0_c0 mx_add0_s7
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_7 mx_b0_0 mx_add0_c0 mx_add0_c1
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_6 mx_b0_7 mx_add0_c1 mx_add0_s6
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_6 mx_b0_7 mx_add0_c1 mx_add0_c2
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_5 mx_b0_6 mx_add0_c2 mx_add0_s5
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_5 mx_b0_6 mx_add0_c2 mx_add0_c3
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_4 mx_b0_5 mx_add0_c3 mx_add0_s4
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_4 mx_b0_5 mx_add0_c3 mx_add0_c4
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_3 mx_b0_4 mx_add0_c4 mx_add0_s3
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_3 mx_b0_4 mx_add0_c4 mx_add0_c5
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_2 mx_b0_3 mx_add0_c5 mx_add0_s2
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_2 mx_b0_3 mx_add0_c5 mx_add0_c6
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_1 mx_b0_2 mx_add0_c6 mx_add0_s1
+001 1
+010 1
+100 1
+111 1
+
+.names mx_a0_1 mx_b0_2 mx_add0_c6 mx_add0_c7
+11- 1
+1-1 1
+-11 1
+
+.names mx_a0_0 mx_b0_1 mx_add0_c7 mx_add0_s0
+001 1
+010 1
+100 1
+111 1
+
+.names mx_add1_c0
+
+.names mx_c0_7 mx_d0_2 mx_add1_c0 mx_add1_s7
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_7 mx_d0_2 mx_add1_c0 mx_add1_c1
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_6 mx_d0_1 mx_add1_c1 mx_add1_s6
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_6 mx_d0_1 mx_add1_c1 mx_add1_c2
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_5 mx_d0_0 mx_add1_c2 mx_add1_s5
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_5 mx_d0_0 mx_add1_c2 mx_add1_c3
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_4 mx_d0_7 mx_add1_c3 mx_add1_s4
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_4 mx_d0_7 mx_add1_c3 mx_add1_c4
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_3 mx_d0_6 mx_add1_c4 mx_add1_s3
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_3 mx_d0_6 mx_add1_c4 mx_add1_c5
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_2 mx_d0_5 mx_add1_c5 mx_add1_s2
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_2 mx_d0_5 mx_add1_c5 mx_add1_c6
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_1 mx_d0_4 mx_add1_c6 mx_add1_s1
+001 1
+010 1
+100 1
+111 1
+
+.names mx_c0_1 mx_d0_4 mx_add1_c6 mx_add1_c7
+11- 1
+1-1 1
+-11 1
+
+.names mx_c0_0 mx_d0_3 mx_add1_c7 mx_add1_s0
+001 1
+010 1
+100 1
+111 1
+
+.names mx_b0_2 mx_add0_s0 mx_b1_0
+01 1
+10 1
+
+.names mx_b0_3 mx_add0_s1 mx_b1_1
+01 1
+10 1
+
+.names mx_b0_4 mx_add0_s2 mx_b1_2
+01 1
+10 1
+
+.names mx_b0_5 mx_add0_s3 mx_b1_3
+01 1
+10 1
+
+.names mx_b0_6 mx_add0_s4 mx_b1_4
+01 1
+10 1
+
+.names mx_b0_7 mx_add0_s5 mx_b1_5
+01 1
+10 1
+
+.names mx_b0_0 mx_add0_s6 mx_b1_6
+01 1
+10 1
+
+.names mx_b0_1 mx_add0_s7 mx_b1_7
+01 1
+10 1
+
+.names mx_d0_7 mx_add1_s0 mx_d1_0
+01 1
+10 1
+
+.names mx_d0_0 mx_add1_s1 mx_d1_1
+01 1
+10 1
+
+.names mx_d0_1 mx_add1_s2 mx_d1_2
+01 1
+10 1
+
+.names mx_d0_2 mx_add1_s3 mx_d1_3
+01 1
+10 1
+
+.names mx_d0_3 mx_add1_s4 mx_d1_4
+01 1
+10 1
+
+.names mx_d0_4 mx_add1_s5 mx_d1_5
+01 1
+10 1
+
+.names mx_d0_5 mx_add1_s6 mx_d1_6
+01 1
+10 1
+
+.names mx_d0_6 mx_add1_s7 mx_d1_7
+01 1
+10 1
+
+.names mx_b1_0 k16 mx_o0_0
+01 1
+10 1
+
+.names mx_b1_1 k17 mx_o0_1
+01 1
+10 1
+
+.names mx_b1_2 k18 mx_o0_2
+01 1
+10 1
+
+.names mx_b1_3 k19 mx_o0_3
+01 1
+10 1
+
+.names mx_b1_4 k20 mx_o0_4
+01 1
+10 1
+
+.names mx_b1_5 k21 mx_o0_5
+01 1
+10 1
+
+.names mx_b1_6 k22 mx_o0_6
+01 1
+10 1
+
+.names mx_b1_7 k23 mx_o0_7
+01 1
+10 1
+
+.names mx_add1_s0 k24 mx_o1_0
+01 1
+10 1
+
+.names mx_add1_s1 k25 mx_o1_1
+01 1
+10 1
+
+.names mx_add1_s2 k26 mx_o1_2
+01 1
+10 1
+
+.names mx_add1_s3 k27 mx_o1_3
+01 1
+10 1
+
+.names mx_add1_s4 k28 mx_o1_4
+01 1
+10 1
+
+.names mx_add1_s5 k29 mx_o1_5
+01 1
+10 1
+
+.names mx_add1_s6 k30 mx_o1_6
+01 1
+10 1
+
+.names mx_add1_s7 k31 mx_o1_7
+01 1
+10 1
+
+.names mx_d1_0 k0 mx_o2_0
+01 1
+10 1
+
+.names mx_d1_1 k1 mx_o2_1
+01 1
+10 1
+
+.names mx_d1_2 k2 mx_o2_2
+01 1
+10 1
+
+.names mx_d1_3 k3 mx_o2_3
+01 1
+10 1
+
+.names mx_d1_4 k4 mx_o2_4
+01 1
+10 1
+
+.names mx_d1_5 k5 mx_o2_5
+01 1
+10 1
+
+.names mx_d1_6 k6 mx_o2_6
+01 1
+10 1
+
+.names mx_d1_7 k7 mx_o2_7
+01 1
+10 1
+
+.names mx_add0_s0 k8 mx_o3_0
+01 1
+10 1
+
+.names mx_add0_s1 k9 mx_o3_1
+01 1
+10 1
+
+.names mx_add0_s2 k10 mx_o3_2
+01 1
+10 1
+
+.names mx_add0_s3 k11 mx_o3_3
+01 1
+10 1
+
+.names mx_add0_s4 k12 mx_o3_4
+01 1
+10 1
+
+.names mx_add0_s5 k13 mx_o3_5
+01 1
+10 1
+
+.names mx_add0_s6 k14 mx_o3_6
+01 1
+10 1
+
+.names mx_add0_s7 k15 mx_o3_7
+01 1
+10 1
+
+.names mx_o0_0 out0
+1 1
+
+.names mx_o0_1 out1
+1 1
+
+.names mx_o0_2 out2
+1 1
+
+.names mx_o0_3 out3
+1 1
+
+.names mx_o0_4 out4
+1 1
+
+.names mx_o0_5 out5
+1 1
+
+.names mx_o0_6 out6
+1 1
+
+.names mx_o0_7 out7
+1 1
+
+.names mx_o1_0 out8
+1 1
+
+.names mx_o1_1 out9
+1 1
+
+.names mx_o1_2 out10
+1 1
+
+.names mx_o1_3 out11
+1 1
+
+.names mx_o1_4 out12
+1 1
+
+.names mx_o1_5 out13
+1 1
+
+.names mx_o1_6 out14
+1 1
+
+.names mx_o1_7 out15
+1 1
+
+.names mx_o2_0 out16
+1 1
+
+.names mx_o2_1 out17
+1 1
+
+.names mx_o2_2 out18
+1 1
+
+.names mx_o2_3 out19
+1 1
+
+.names mx_o2_4 out20
+1 1
+
+.names mx_o2_5 out21
+1 1
+
+.names mx_o2_6 out22
+1 1
+
+.names mx_o2_7 out23
+1 1
+
+.names mx_o3_0 out24
+1 1
+
+.names mx_o3_1 out25
+1 1
+
+.names mx_o3_2 out26
+1 1
+
+.names mx_o3_3 out27
+1 1
+
+.names mx_o3_4 out28
+1 1
+
+.names mx_o3_5 out29
+1 1
+
+.names mx_o3_6 out30
+1 1
+
+.names mx_o3_7 out31
+1 1
+
+.end

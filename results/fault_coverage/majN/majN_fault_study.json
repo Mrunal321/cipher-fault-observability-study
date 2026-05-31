@@ -1,0 +1,111 @@
+{
+  "single": [
+    {
+      "arity": 3,
+      "n_inputs": 3,
+      "n_gates": 1,
+      "n_test_vectors": 8,
+      "detectable": 1,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 1.0,
+      "avg_breadth": 1.0,
+      "theory_mask": 0.5
+    },
+    {
+      "arity": 5,
+      "n_inputs": 5,
+      "n_gates": 1,
+      "n_test_vectors": 32,
+      "detectable": 1,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 1.0,
+      "avg_breadth": 1.0,
+      "theory_mask": 0.625
+    },
+    {
+      "arity": 7,
+      "n_inputs": 7,
+      "n_gates": 1,
+      "n_test_vectors": 128,
+      "detectable": 1,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 1.0,
+      "avg_breadth": 1.0,
+      "theory_mask": 0.6875
+    }
+  ],
+  "chain": [
+    {
+      "arity": 3,
+      "depth": 5,
+      "n_inputs": 11,
+      "n_gates": 5,
+      "n_test_vectors": 2048,
+      "detectable": 5,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.3875,
+      "avg_breadth": 1.0
+    },
+    {
+      "arity": 5,
+      "depth": 5,
+      "n_inputs": 21,
+      "n_gates": 5,
+      "n_test_vectors": 50000,
+      "detectable": 5,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.3173,
+      "avg_breadth": 1.0
+    },
+    {
+      "arity": 7,
+      "depth": 5,
+      "n_inputs": 31,
+      "n_gates": 5,
+      "n_test_vectors": 50000,
+      "detectable": 5,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.2899,
+      "avg_breadth": 1.0
+    }
+  ],
+  "tree": [
+    {
+      "arity": 3,
+      "depth": 3,
+      "n_inputs": 27,
+      "n_gates": 13,
+      "n_test_vectors": 50000,
+      "detectable": 13,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.3656,
+      "avg_breadth": 1.0
+    },
+    {
+      "arity": 5,
+      "depth": 3,
+      "n_inputs": 125,
+      "n_gates": 31,
+      "n_test_vectors": 50000,
+      "detectable": 31,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.2057,
+      "avg_breadth": 1.0
+    },
+    {
+      "arity": 7,
+      "depth": 3,
+      "n_inputs": 343,
+      "n_gates": 57,
+      "n_test_vectors": 50000,
+      "detectable": 57,
+      "fault_coverage": 100.0,
+      "avg_det_prob": 0.1394,
+      "avg_breadth": 1.0
+    }
+  ],
+  "params": {
+    "chain_depth": 5,
+    "tree_depth": 3
+  }
+}

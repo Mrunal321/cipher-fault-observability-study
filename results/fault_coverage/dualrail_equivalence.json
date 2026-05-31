@@ -1,0 +1,152 @@
+[
+  {
+    "circuit": "present_sbox",
+    "n_test_vectors": 16,
+    "identical_per_input": 16,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "gift_sbox",
+    "n_test_vectors": 16,
+    "identical_per_input": 16,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "prince_sbox",
+    "n_test_vectors": 16,
+    "identical_per_input": 16,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "prince_sbox_inv",
+    "n_test_vectors": 16,
+    "identical_per_input": 16,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "gift_subcells",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "gift_round",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "present_round",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "prince_mprime",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "simon32_round",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "simon64_round",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "keccak_chi_5bit",
+    "n_test_vectors": 32,
+    "identical_per_input": 32,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "keccak_chi_64row",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "speckey_box",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "speck32_round",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  },
+  {
+    "circuit": "marx2_box",
+    "n_test_vectors": 10000,
+    "identical_per_input": 10000,
+    "identical_frac": 1.0,
+    "avg_jaccard": 1.0,
+    "mig_only_outputs": 0,
+    "mmig_only_outputs": 0,
+    "diversity_present": false
+  }
+]

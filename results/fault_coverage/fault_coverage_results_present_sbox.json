@@ -1,0 +1,37 @@
+[
+  {
+    "circuit": "present_sbox",
+    "flows": {
+      "aoig": {
+        "total_faults": 7,
+        "detectable": 4,
+        "masked": 3,
+        "fault_coverage": 57.14,
+        "masking_rate": 42.86,
+        "avg_breadth": 1.0,
+        "avg_det_prob": 1.0,
+        "n_test_vectors": 16
+      },
+      "mig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0079,
+        "avg_det_prob": 0.7853,
+        "n_test_vectors": 16
+      },
+      "mmig": {
+        "total_faults": 25,
+        "detectable": 23,
+        "masked": 2,
+        "fault_coverage": 92.0,
+        "masking_rate": 8.0,
+        "avg_breadth": 1.0079,
+        "avg_det_prob": 0.7853,
+        "n_test_vectors": 16
+      }
+    }
+  }
+]

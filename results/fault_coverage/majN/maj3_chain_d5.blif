@@ -1,0 +1,29 @@
+.model maj3_chain_d5
+.inputs x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10
+.outputs g5
+.names x0 x1 x2 g1
+011 1
+101 1
+110 1
+111 1
+.names g1 x3 x4 g2
+011 1
+101 1
+110 1
+111 1
+.names g2 x5 x6 g3
+011 1
+101 1
+110 1
+111 1
+.names g3 x7 x8 g4
+011 1
+101 1
+110 1
+111 1
+.names g4 x9 x10 g5
+011 1
+101 1
+110 1
+111 1
+.end
