@@ -5,7 +5,7 @@ higher-arity majority gates (MAJ3 vs MAJ5 vs MAJ7).
 
 We bypass synthesis entirely and construct synthetic BLIF circuits with
 MAJn primitives as single 5-input or 7-input truth-table gates.  Then
-we run the same single-bit-flip campaign as on the JETC circuits.
+we run the same single-bit-flip campaign as on the cipher circuits.
 
 This isolates the *gate-level masking* effect from synthesis variance.
 

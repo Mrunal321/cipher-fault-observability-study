@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """
-invariant_metric.py — Find a representation-invariant fault measurement.
+invariant_metric.py - Evaluate target-layer and ARX/substitution controls.
 
 granularity_baseline.py showed that AvgDP over *all* gate sites is strongly
 associated with decomposition granularity (Spearman rho = -0.85; sign of the AOIG->MIG
-effect flips with the baseline). This script tests two things the reframed
-paper needs:
+effect flips with the baseline). This script tests two controls:
 
 1. TARGET-LAYER INVARIANCE.  A realistic DFA adversary targets a specific
    intermediate value, not a uniformly-random internal gate. The realisable
    fault set is the gates that drive primary outputs (the target layer).
    We compute AvgDP and AvgBW restricted to those gates, for every flow.
    If the target-layer metric is ~constant across flows, that is the
-   defensible, threat-model-aligned statement that replaces the broken
-   "MIG reduces observability" headline.
+   defensible, threat-model-aligned statement for the target layer.
 
 2. FINDING-3 SURVIVAL (AvgBW).  The ARX-vs-substitution avalanche-breadth
    result is computed on the same netlists, so it must be re-checked against
@@ -62,7 +60,6 @@ def flow_blif(name: str, flow: str) -> Path:
         "aoig": d / f"{name}_aoig.blif",
         "aig":  d / f"{name}_aig.blif",
         "mig":  d / f"{name}_mig_maj_opt.blif",
-        "mmig": d / f"{name}_mmig_mmig_opt.blif",
     }[flow]
 
 

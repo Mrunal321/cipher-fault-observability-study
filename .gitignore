@@ -18,20 +18,6 @@ fsm_encoding.os
 *.pb
 *.str
 
-# LaTeX build artifacts
-paper/tex/*.aux
-paper/tex/*.bbl
-paper/tex/*.blg
-paper/tex/*.fdb_latexmk
-paper/tex/*.fls
-paper/tex/*.log
-paper/tex/*.out
-paper/tex/*.pdf
-paper/tex/*.synctex.gz
-
-# Submission PDFs (contain venue name — keep out of public repo)
-paper/*.pdf
-
 # Backup files created during editing
 *.corrupt.bak
 

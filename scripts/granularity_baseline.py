@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-granularity_baseline.py — Same-granularity AvgDP control for AOIG -> MIG.
+granularity_baseline.py - Small-gate AvgDP control for AOIG -> MIG.
 
-The headline AvgDP reduction (mean -13%, README finding 1) compares a Yosys
+The AOIG-to-MIG AvgDP reduction (mean -13%) compares a Yosys
 LUT/truth-table "AOIG" netlist against a fully MAJ3-decomposed MIG netlist.
 In the LUT baseline each output bit is a *single* undecomposed node, so the
 only detectable fault sites are the output functions themselves -> dp = 1.0
@@ -12,7 +12,7 @@ interior MAJ3 nodes whose dp < 1. The reduction may therefore be a granularity
 
 This script removes that confound: it re-synthesizes each circuit into a
 2-input AND-Inverter Graph (AIG) via `yosys ... abc -g AND`, so the baseline
-is decomposed to the same primitive-gate granularity class as the MIG. It then
+is decomposed to a comparable small-gate representation. It then
 runs the identical single-bit-flip campaign on the AIG and the existing MIG and
 reports how much of the AvgDP gap survives.
 
@@ -33,7 +33,7 @@ sys.path.insert(0, str(REPO / "src"))
 
 from fault.dfa.blif_parser import parse_blif_file
 
-# Reuse the exact campaign machinery from the headline script.
+# Reuse the exact campaign machinery from the fault-campaign script.
 sys.path.insert(0, str(REPO / "scripts"))
 from run_fault_coverage import (  # noqa: E402
     CIRCUITS,
@@ -136,7 +136,7 @@ def main() -> None:
     n_red = sum(1 for d in deltas if d < 0)
     mean_d = sum(deltas) / len(deltas) if deltas else 0.0
     summary = {
-        "baseline": "yosys abc -g AND (2-input AIG), same-granularity control",
+        "baseline": "yosys abc -g AND (2-input AIG), small-gate control",
         "n_circuits": len(rows),
         "n_with_reduction": n_red,
         "mean_pct_change": round(mean_d, 2),
@@ -148,7 +148,7 @@ def main() -> None:
     print("-" * len(hdr))
     print(f"AIG->MIG: mean dp change = {mean_d:+.2f}%  "
           f"({n_red}/{len(rows)} circuits reduced)")
-    print(f"LUT->MIG (headline)     = -13.00%  (13/15 reduced)")
+    print(f"LUT->MIG comparison     = -13.00%  (13/15 reduced)")
     print()
 
     out = OUT_DIR / "granularity_baseline.json"

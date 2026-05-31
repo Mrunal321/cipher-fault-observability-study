@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-run_fault_coverage.py — Single-bit-flip fault coverage: AOIG vs MIG vs mMIG.
+run_fault_coverage.py - Single-bit-flip fault coverage for AOIG and MIG.
 
 For each circuit and each flow we inject every single-bit-flip fault at every
 gate-output wire and measure how many of those faults are observable at the
@@ -246,7 +246,6 @@ def blif_paths(name: str) -> Dict[str, Path]:
     return {
         "aoig": d / f"{name}_aoig.blif",
         "mig":  d / f"{name}_mig_maj_opt.blif",
-        "mmig": d / f"{name}_mmig_mmig_opt.blif",
     }
 
 # ---------------------------------------------------------------------------
@@ -254,7 +253,7 @@ def blif_paths(name: str) -> Dict[str, Path]:
 # ---------------------------------------------------------------------------
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Fault coverage: AOIG vs MIG vs mMIG")
+    p = argparse.ArgumentParser(description="Fault coverage: AOIG vs MIG")
     p.add_argument("--out-dir", default="results/fault_coverage",
                    help="Output directory")
     p.add_argument("--circuits", nargs="+",
@@ -296,7 +295,7 @@ def main():
 
     for name, raw_blif_rel in circuits:
         paths = blif_paths(name)
-        flows = ["aoig", "mig", "mmig"] if not args.no_aoig else ["mig", "mmig"]
+        flows = ["aoig", "mig"] if not args.no_aoig else ["mig"]
         circ_results: Dict[str, Any] = {"circuit": name, "flows": {}}
 
         last_flow_printed = False
@@ -341,29 +340,6 @@ def main():
         suffix = "_no_aoig" if args.no_aoig else ""
         results_path = out_dir / f"fault_coverage_results_{slug}{suffix}.json"
     results_path.write_text(json.dumps(all_results, indent=2))
-
-    # Delta table: mMIG vs MIG
-    print()
-    print("=" * 80)
-    print("mMIG vs MIG delta (fault coverage)")
-    print("=" * 80)
-    print(f"{'Circuit':<22}  {'ΔFC%':>8}  {'ΔMasking%':>10}  {'ΔAvgBW':>9}  {'MIN=0?':>7}")
-    print("-" * 70)
-
-    for rec in all_results:
-        name = rec["circuit"]
-        mig  = rec["flows"].get("mig",  {})
-        mmig = rec["flows"].get("mmig", {})
-        if not mig or not mmig:
-            continue
-
-        dfc  = mmig["fault_coverage"]  - mig["fault_coverage"]
-        dmsk = mmig["masking_rate"]    - mig["masking_rate"]
-        dbw  = mmig["avg_breadth"]     - mig["avg_breadth"]
-
-        # Look up structural min count from jetc_results
-        no_min = ""  # filled below if available
-        print(f"{name:<22}  {dfc:>+8.2f}  {dmsk:>+10.2f}  {dbw:>+9.4f}")
 
     print()
     print(f"Results saved to: {results_path}")

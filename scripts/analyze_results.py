@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-analyze_implicit_countermeasure.py — Extract and report the positive
-findings buried in the existing fault data:
+analyze_results.py - Summarize the active fault-observability results.
 
   Finding 1: MIG synthesis reduces per-vector fault observability
              relative to the AOIG baseline. AvgDP drops by a mean of
@@ -14,9 +13,8 @@ findings buried in the existing fault data:
              (AvgBW); substitution-based and Keccak primitives show 1.00.
              A 2x dichotomy attributable to addition-chain carry propagation.
 
-These are computed from existing JSONs — no re-simulation needed.
-Output: results/fault_coverage/implicit_countermeasure.json + a printable
-summary table for the paper.
+These are computed from existing JSONs, so no re-simulation is needed.
+Output: results/fault_coverage/summary_metrics.json and a printable summary.
 """
 
 from __future__ import annotations
@@ -65,13 +63,11 @@ def main() -> None:
             continue
         aoig = rec["flows"].get("aoig", {})
         mig  = rec["flows"].get("mig",  {})
-        mmig = rec["flows"].get("mmig", {})
         if not aoig or not mig:
             continue
 
         a_dp  = aoig.get("avg_det_prob", 0.0)
         m_dp  = mig .get("avg_det_prob", 0.0)
-        mm_dp = mmig.get("avg_det_prob", 0.0)
         rel_aoig_to_mig = ((m_dp - a_dp) / a_dp * 100.0) if a_dp else 0.0
 
         rows.append({
@@ -79,11 +75,9 @@ def main() -> None:
             "family":              family,
             "aoig_avgdp":          a_dp,
             "mig_avgdp":           m_dp,
-            "mmig_avgdp":          mm_dp,
             "aoig_to_mig_pct":     rel_aoig_to_mig,
             "aoig_avgbw":          aoig.get("avg_breadth", 0.0),
             "mig_avgbw":           mig .get("avg_breadth", 0.0),
-            "mmig_avgbw":          mmig.get("avg_breadth", 0.0),
             "aoig_fault_coverage": aoig.get("fault_coverage", 0.0),
             "mig_fault_coverage":  mig .get("fault_coverage", 0.0),
         })
@@ -136,11 +130,11 @@ def main() -> None:
         "finding_1_observability_reduction":    summary_1,
         "finding_2_arx_vs_substitution":        summary_2,
     }
-    out_path = RES / "fault_coverage" / "implicit_countermeasure.json"
+    out_path = RES / "fault_coverage" / "summary_metrics.json"
     out_path.write_text(json.dumps(output, indent=2))
 
     print("=" * 78)
-    print("FINDING 1 — MIG synthesis reduces per-vector fault observability")
+    print("RESULT 1 - AOIG-to-MIG all-site AvgDP comparison")
     print("=" * 78)
     print(f"  {summary_1['n_with_improvement']}/{summary_1['n_circuits']} circuits "
           f"show AvgDP reduction AOIG → MIG")
@@ -151,7 +145,7 @@ def main() -> None:
 
     print()
     print("=" * 78)
-    print("FINDING 2 — Fault avalanche dichotomy: ARX vs substitution-based")
+    print("RESULT 2 - Fault avalanche breadth: ARX vs substitution-based")
     print("=" * 78)
     print(f"  {'Family':<18} {'n':>3} {'mean AvgBW':>11} {'min':>6} {'max':>6}")
     print(f"  {'-'*18} {'---':>3} {'-'*11:>11} {'-'*6:>6} {'-'*6:>6}")

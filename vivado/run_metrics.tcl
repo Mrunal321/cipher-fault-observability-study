@@ -1,23 +1,23 @@
-# run_metrics.tcl — Paper-style FPGA metrics extraction.
+# run_metrics.tcl - FPGA metrics extraction.
 #
-# Matches JETC paper methodology:
+# Reports:
 #   Part:      xc7s100fgga676-2 (Spartan-7)
 #   Synth:     synth_design -flatten_hierarchy rebuilt  (Default directive)
 #   Impl:      opt_design; place_design; route_design   (Default directive)
 #   Inverters: LUT1 cells set DONT_TOUCH after synth (preserves inverter count)
 #
 # Outputs a JSON with:
-#   synth_luts      — LUT count after synthesis
-#   synth_lut1      — LUT1 (inverter) count after synthesis
-#   logic_levels    — critical-path logic levels (after synth, post-route removed)
-#   impl_luts       — LUT count after place+route
-#   impl_lut1       — LUT1 (inverter) count after place+route
-#   delay_ns        — post-route critical-path data-path delay
-#   logic_ns        — logic portion of critical-path delay
-#   route_ns        — routing portion of critical-path delay
-#   logic_power_mw  — on-chip logic dynamic power (mW)
-#   signal_power_mw — on-chip signal dynamic power (mW)
-#   dynamic_power_mw— total on-chip dynamic power (mW)
+#   synth_luts       LUT count after synthesis
+#   synth_lut1       LUT1 (inverter) count after synthesis
+#   logic_levels     critical-path logic levels
+#   impl_luts        LUT count after place+route
+#   impl_lut1        LUT1 (inverter) count after place+route
+#   delay_ns         post-route critical-path data-path delay
+#   logic_ns         logic portion of critical-path delay
+#   route_ns         routing portion of critical-path delay
+#   logic_power_mw   on-chip logic dynamic power (mW)
+#   signal_power_mw  on-chip signal dynamic power (mW)
+#   dynamic_power_mw total on-chip dynamic power (mW)
 #
 # Args: --verilog <path> --top <name> --part <name> --period <ns> --out-json <path>
 
@@ -118,7 +118,7 @@ set dynamic_power_mw 0.0
 
 set pwr_rpt [report_power -return_string -quiet]
 
-# Helper: safe numeric extraction — returns 0.0 if not a number
+# Helper: safe numeric extraction; returns 0.0 if not a number
 proc safe_mw {val} {
     if {[catch {set r [expr {$val * 1000.0}]}]} { return 0.0 }
     return $r
