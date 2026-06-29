@@ -105,10 +105,10 @@ def main() -> None:
     for fam, vals in by_family.items():
         family_stats[fam] = {
             "n":     len(vals),
-            "mean":  statistics.mean(vals),
-            "stdev": statistics.pstdev(vals) if len(vals) > 1 else 0.0,
-            "min":   min(vals),
-            "max":   max(vals),
+            "mean":  round(statistics.mean(vals), 6),
+            "stdev": round(statistics.pstdev(vals) if len(vals) > 1 else 0.0, 6),
+            "min":   round(min(vals), 6),
+            "max":   round(max(vals), 6),
         }
 
     arx_mean = statistics.mean(
@@ -119,9 +119,9 @@ def main() -> None:
     )
     summary_2 = {
         "family_stats":     family_stats,
-        "arx_mean_avgbw":   arx_mean,
-        "subst_mean_avgbw": subst_mean,
-        "arx_over_subst_x": arx_mean / subst_mean if subst_mean else 0.0,
+        "arx_mean_avgbw":   round(arx_mean, 6),
+        "subst_mean_avgbw": round(subst_mean, 6),
+        "arx_over_subst_x": round(arx_mean / subst_mean if subst_mean else 0.0, 6),
     }
 
     # ----- Save & print -----

@@ -6,22 +6,26 @@ cd "$ROOT"
 
 usage() {
   cat <<'EOF'
-Usage: ./reproduce.sh [--quick]
+Usage: ./reproduce.sh [--quick|--full]
 
-Default mode:
+Default / quick mode:
+  Regenerate active summary JSONs from frozen experiment outputs and verify
+  the paper-facing headline numbers.
+
+Full mode:
   Rerun the AOIG/MIG fault campaign, regenerate the AIG-control data,
   recompute target-layer controls, rerun MAJ-n experiments, and verify
-  the reported summary numbers. Full mode requires yosys for the AIG
-  regeneration step.
-
-Quick mode:
-  Regenerate active summary JSONs from frozen experiment outputs.
+  the reported summary numbers. This requires yosys for the AIG
+  regeneration step and is sensitive to the yosys/ABC version used to
+  regenerate the decomposed AIG controls.
 EOF
 }
 
-QUICK=0
+FULL=0
 if [[ "${1:-}" == "--quick" ]]; then
-  QUICK=1
+  FULL=0
+elif [[ "${1:-}" == "--full" ]]; then
+  FULL=1
 elif [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
   usage
   exit 0
@@ -30,7 +34,7 @@ elif [[ $# -gt 0 ]]; then
   exit 2
 fi
 
-if [[ "$QUICK" == "0" ]]; then
+if [[ "$FULL" == "1" ]]; then
   echo "[1/5] Running AOIG/MIG fault campaign"
   python3 scripts/run_fault_coverage.py
 

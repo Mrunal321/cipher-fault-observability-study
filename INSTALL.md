@@ -20,16 +20,22 @@ python3 scripts/granularity_baseline.py
 
 Vivado 2023.2 is required only if you want to rerun FPGA implementation metrics using `vivado/run_metrics.tcl`. The repository already includes frozen BLIFs and JSON outputs needed for the fault-observability experiments.
 
-## Run Everything
+## Verify The Artifact
 
 ```bash
 ./reproduce.sh
 ```
 
-For a fast summary-only check from frozen JSONs:
+This recomputes the active summaries from the shipped frozen JSON outputs and
+verifies the paper-facing headline numbers.
+
+For full regeneration of the fault campaigns and AIG controls:
 
 ```bash
-./reproduce.sh --quick
+./reproduce.sh --full
 ```
 
-The default workflow is slower and expects `yosys` on `PATH`.
+The full workflow is slower and expects `yosys` on `PATH`. The AIG
+granularity-control regeneration is sensitive to the exact Yosys/ABC version;
+the paper-facing numbers are therefore checked against the frozen outputs
+included in the repository.

@@ -39,14 +39,20 @@ python3 -m pip install -r requirements.txt
 ./reproduce.sh
 ```
 
-By default, `reproduce.sh` reruns the active experiment workflow. It can take longer and requires `yosys` for AIG regeneration. Use `./reproduce.sh --quick` for a fast summary-only check from frozen JSONs.
+By default, `reproduce.sh` recomputes the active summaries from the shipped
+frozen JSON outputs and verifies the paper-facing headline numbers. This is the
+recommended artifact check for reviewers.
+
+Use `./reproduce.sh --full` to rerun the fault campaigns and regenerate the AIG
+granularity-control data. Full regeneration requires `yosys`; the decomposed
+AIG controls are sensitive to the exact Yosys/ABC version, so the paper-facing
+numbers are guarded against the shipped frozen outputs.
 
 ## Key Commands
 
 ```bash
-# Recompute summary metrics from existing JSONs
-python3 scripts/analyze_results.py
-python3 scripts/verify_summary_numbers.py
+# Recompute summary metrics from existing JSONs and verify headline numbers
+./reproduce.sh
 
 # Rerun the full gate-output fault campaign
 python3 scripts/run_fault_coverage.py
