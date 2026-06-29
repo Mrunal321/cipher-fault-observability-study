@@ -1,36 +1,28 @@
 \begin{table}[t]
 \centering
-\caption{All-site \AvgDP{} change (\%) from AOIG to MIG by baseline.
-         Negative = MIG has lower \AvgDP{}; positive = MIG has higher.}
+\caption{All-site \AvgDP{} change (AOIG$\to$MIG) by baseline. LUT baseline: mean $-13\%$ ($13/15$ circuits). Decomposed-AIG baseline: mean $+21\%$ ($0/15$ circuits). Sign is baseline-dependent.}
 \label{tab:granularity_confound}
-\footnotesize
-\begin{tabular}{@{}lrr@{}}
+\begin{tabular}{lrr}
 \toprule
-Circuit & LUT$\!\to\!$MIG & AIG$\!\to\!$MIG \\
+Circuit & LUT$\to$MIG (\%) & AIG$\to$MIG (\%) \\
 \midrule
-\multicolumn{3}{@{}l}{\textit{4-bit S-box}} \\
-\quad PRESENT S-box       & $-21.5$ & $+7.6$  \\
-\quad GIFT S-box          & $-16.8$ & $+8.3$  \\
-\quad PRINCE S-box        & $-23.7$ & $+9.2$  \\
-\quad PRINCE S-box$^{-1}$ & $-23.1$ & $+14.5$ \\
-\multicolumn{3}{@{}l}{\textit{Substitution round}} \\
-\quad GIFT subcells  & $-16.8$ & $+7.8$  \\
-\quad GIFT round     & $-16.8$ & $+18.7$ \\
-\quad PRESENT round  & $-19.8$ & $+16.7$ \\
-\multicolumn{3}{@{}l}{\textit{Permutation}} \\
-\quad PRINCE $M'$    & $-10.0$ & $+20.0$ \\
-\multicolumn{3}{@{}l}{\textit{SIMON}} \\
-\quad SIMON-32       & $-11.1$ & $+47.7$ \\
-\quad SIMON-64       & $-11.1$ & $+47.7$ \\
-\multicolumn{3}{@{}l}{\textit{Keccak-$\chi$}} \\
-\quad 5-bit          & $+8.0$  & $+11.7$ \\
-\quad 64-row         & $+8.0$  & $+11.7$ \\
-\multicolumn{3}{@{}l}{\textit{ARX}} \\
-\quad SpecKey        & $-13.9$ & $+38.1$ \\
-\quad Speck-32       & $-12.5$ & $+24.0$ \\
-\quad MARX-2         & $-13.8$ & $+37.9$ \\
+PRESENT S-box & -21.5 & +7.6 \\
+GIFT S-box & -16.8 & +8.3 \\
+PRINCE S-box & -23.7 & +9.2 \\
+PRINCE S-box$^{-1}$ & -23.1 & +14.5 \\
+GIFT subcells & -16.8 & +7.8 \\
+GIFT round & -16.8 & +18.7 \\
+PRESENT round & -19.8 & +16.7 \\
+PRINCE M' & -10.0 & +20.0 \\
+SIMON-32 & -11.1 & +47.7 \\
+SIMON-64 & -11.1 & +47.7 \\
+Keccak-$\chi$ & +8.0 & +11.7 \\
+Keccak-$\chi$ (64-row) & +8.0 & +11.7 \\
+SpecKey & -13.9 & +38.1 \\
+Speck-32 & -12.5 & +24.0 \\
+MARX-2 & -13.8 & +37.9 \\
 \midrule
-\textbf{Mean} & $\mathbf{-13.0}$ & $\mathbf{+21.4}$ \\
+\textbf{Mean} & \textbf{-13.0} & \textbf{+21.4} \\
 \bottomrule
 \end{tabular}
 \end{table}

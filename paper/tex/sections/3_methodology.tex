@@ -193,7 +193,7 @@ $g$ has exactly one downstream consumer, $h = \texttt{new\_n15}$,
 which is a 3-input majority over \texttt{new\_n10}, the complement of
 $g$'s value, and \texttt{new\_n14}.
 Figure~\ref{fig:masking-example} shows the structure;
-Table~\ref{tab:masking-trace} enumerates the per-vector behavior.
+Table~\ref{tab:masking-trace} summarizes the exhaustive trace.
 
 \input{../mechanism_example/figure_masking}
 \input{../mechanism_example/table_trace}
@@ -229,6 +229,6 @@ are included in the artifact and the fault metrics are reproducible
 from them on a stock Python 3.10 with NumPy installation.
 
 The accompanying artifact contains the cipher BLIFs,
-the synthesized netlists, the fault simulator, the table and figure
-generators, and a verification script that checks the quoted summary
-numbers against the raw JSON outputs.
+the synthesized netlists, the fault simulator, generated tables and
+figures, and a verification script that checks the quoted summary numbers
+against the raw JSON outputs.

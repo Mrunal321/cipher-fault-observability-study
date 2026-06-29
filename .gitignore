@@ -18,6 +18,17 @@ fsm_encoding.os
 *.pb
 *.str
 
+# LaTeX build byproducts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+/paper/tex/main.pdf
+/paper/final.pdf
+/paper/host2026_submission.pdf
+
 # Backup files created during editing
 *.corrupt.bak
 

@@ -20,8 +20,8 @@ that directly drives a primary output contributes one observable fault
 site with detection probability one. Decomposing the same function into
 many small gates creates many interior sites whose effects can be masked
 downstream. A metric averaged over all gate sites can therefore move
-substantially even when the realized Boolean function and attacker-facing
-target layer have not become more fault resistant.
+substantially even when the realized Boolean function and the
+output-driving layer have not become more fault resistant.
 
 We evaluate this question on 15 cipher primitives synthesized into three
 representations: the LUT-style AOIG baseline produced by Yosys, a
@@ -41,9 +41,9 @@ does not survive a decomposed-AIG baseline at comparable granularity.
   \item As a granularity control, we measure target-layer \AvgDP{}
         (faults restricted to output-driving gates). This yields \AvgDP{}
         $=1.000$ across all three representations, consistent with the
-        interpretation that the all-site difference comes from interior
-        fault-site population mix, not from any change in the
-        attacker-facing output layer.
+        interpretation that the all-site difference comes from the mix of
+        interior gate sites, not from any change in the output-driving
+        layer.
   \item We report one result that survives the controls: ARX primitives exhibit
         approximately $1.9\times$ broader output corruption per detected
         fault than substitution-based primitives across representations.

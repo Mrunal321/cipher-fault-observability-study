@@ -182,7 +182,7 @@
     }
   ],
   "summary": {
-    "baseline": "yosys abc -g AND (2-input AIG), same-granularity control",
+    "baseline": "yosys abc -g AND (2-input AIG), small-gate control",
     "n_circuits": 15,
     "n_with_reduction": 0,
     "mean_pct_change": 21.44,

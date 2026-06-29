@@ -4,7 +4,7 @@
   "masked": 2,
   "fault_coverage": 99.3,
   "masking_rate": 0.7,
-  "avg_breadth": 2.2174,
-  "avg_det_prob": 0.8618,
+  "avg_breadth": 2.224,
+  "avg_det_prob": 0.8616,
   "n_test_vectors": 10000
 }

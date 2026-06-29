@@ -1,22 +1,21 @@
-Recent fault-characterization studies inject single-bit faults at gate
-outputs and compare per-vector observability metrics across synthesis
-flows. We show that, as commonly applied, these metrics can be
-confounded by a variable that is not fault resistance: the granularity
-of the gate-level representation. Using 15 cipher primitives from
-PRESENT, GIFT, PRINCE, SIMON, Keccak-$\chi$, and Speck/ARX, we compare
-truth-table LUT/AOIG, 2-input AIG, and MIG representations under the
-same gate-output \bitflip{} model. The apparent benefit of majority
-synthesis reverses sign with the baseline: relative to the LUT-style
-AOIG baseline, MIG reduces average per-vector detection probability
-(\AvgDP{}) by 13.0\% on average; relative to a decomposed-AIG baseline at comparable
-small-gate granularity, MIG \emph{increases} \AvgDP{} by 21.4\%, with
-no circuit showing a reduction. As a granularity control, we restrict
-faults to output-driving gates (the realizable DFA target layer);
-target-layer \AvgDP{} $=1.000$ across all three representations,
-showing that the all-site difference comes from the interior fault-site
-population, not from any change in the attacker-facing output layer. One finding remains
-stable across representation: ARX primitives exhibit about $1.9\times$
-broader output corruption per detected fault than substitution-based
-primitives. We give reporting guidelines for synthesis-flow fault metrics
-and release the netlists, campaign scripts, generated tables, and scripts
-that check the quoted summary numbers.
+Gate-level fault studies often inject a bit flip at each gate output and
+measure how often the fault reaches a primary output. This comparison can
+be misleading when the synthesis flows use gates of different sizes. In
+simple terms, we ask whether LUT, AIG, and MIG netlists really change the
+measured fault behavior, or whether the change mostly comes from counting
+different kinds of gate sites. Using 15 cipher primitives from PRESENT,
+GIFT, PRINCE, SIMON, Keccak-$\chi$, and Speck/ARX, we compare
+truth-table LUT/AOIG, 2-input AIG, and MIG representations under the same
+gate-output \bitflip{} model. The LUT/AOIG-to-MIG comparison suggests a
+benefit: MIG reduces average per-vector detection probability (\AvgDP{})
+by 13.0\% on average. Under a decomposed-AIG baseline at comparable
+small-gate granularity, however, MIG \emph{increases} \AvgDP{} by
+21.4\%, with no circuit showing a reduction. As a granularity control,
+we restrict faults to output-driving gates. Target-layer \AvgDP{} is
+$1.000$ across all three representations, showing that the all-site
+difference comes from interior gate sites rather than the output-driving
+layer. One finding remains stable across representation: ARX primitives
+exhibit about $1.9\times$ broader output corruption per detected fault
+than substitution-based primitives. We give reporting guidelines for
+synthesis-flow fault metrics and release the netlists, campaign scripts,
+generated tables, and scripts that check the quoted summary numbers.

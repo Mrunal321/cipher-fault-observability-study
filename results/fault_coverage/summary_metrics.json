@@ -59,8 +59,8 @@
       "circuit": "gift_round",
       "family": "Subst. round",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8319,
-      "aoig_to_mig_pct": -16.810000000000002,
+      "mig_avgdp": 0.832,
+      "aoig_to_mig_pct": -16.800000000000004,
       "aoig_avgbw": 1.0,
       "mig_avgbw": 1.0,
       "aoig_fault_coverage": 98.84,
@@ -70,10 +70,10 @@
       "circuit": "present_round",
       "family": "Subst. round",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8018,
-      "aoig_to_mig_pct": -19.820000000000004,
-      "aoig_avgbw": 1.5002,
-      "mig_avgbw": 1.5196,
+      "mig_avgdp": 0.8017,
+      "aoig_to_mig_pct": -19.830000000000002,
+      "aoig_avgbw": 1.4999,
+      "mig_avgbw": 1.5197,
       "aoig_fault_coverage": 98.46,
       "mig_fault_coverage": 99.64
     },
@@ -81,8 +81,8 @@
       "circuit": "prince_mprime",
       "family": "Permutation",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8998,
-      "aoig_to_mig_pct": -10.019999999999996,
+      "mig_avgdp": 0.8997,
+      "aoig_to_mig_pct": -10.029999999999994,
       "aoig_avgbw": 1.0,
       "mig_avgbw": 1.0,
       "aoig_fault_coverage": 96.97,
@@ -92,8 +92,8 @@
       "circuit": "simon32_round",
       "family": "SIMON",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8887,
-      "aoig_to_mig_pct": -11.129999999999995,
+      "mig_avgdp": 0.8889,
+      "aoig_to_mig_pct": -11.109999999999998,
       "aoig_avgbw": 1.0,
       "mig_avgbw": 1.0,
       "aoig_fault_coverage": 96.39,
@@ -103,8 +103,8 @@
       "circuit": "simon64_round",
       "family": "SIMON",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.889,
-      "aoig_to_mig_pct": -11.099999999999998,
+      "mig_avgdp": 0.8891,
+      "aoig_to_mig_pct": -11.09,
       "aoig_avgbw": 1.0,
       "mig_avgbw": 1.0,
       "aoig_fault_coverage": 98.16,
@@ -124,9 +124,9 @@
     {
       "circuit": "keccak_chi_64row",
       "family": "Keccak chi",
-      "aoig_avgdp": 0.8334,
+      "aoig_avgdp": 0.8332,
       "mig_avgdp": 0.9,
-      "aoig_to_mig_pct": 7.991360691144707,
+      "aoig_to_mig_pct": 8.017282765242435,
       "aoig_avgbw": 1.0,
       "mig_avgbw": 1.0,
       "aoig_fault_coverage": 99.69,
@@ -136,10 +136,10 @@
       "circuit": "speck32_round",
       "family": "ARX",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8751,
-      "aoig_to_mig_pct": -12.490000000000002,
-      "aoig_avgbw": 1.7898,
-      "mig_avgbw": 1.7125,
+      "mig_avgdp": 0.8752,
+      "aoig_to_mig_pct": -12.480000000000002,
+      "aoig_avgbw": 1.7909,
+      "mig_avgbw": 1.7134,
       "aoig_fault_coverage": 96.97,
       "mig_fault_coverage": 98.95
     },
@@ -147,10 +147,10 @@
       "circuit": "speckey_box",
       "family": "ARX",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8611,
-      "aoig_to_mig_pct": -13.890000000000002,
-      "aoig_avgbw": 2.0814,
-      "mig_avgbw": 2.2376,
+      "mig_avgdp": 0.8613,
+      "aoig_to_mig_pct": -13.870000000000005,
+      "aoig_avgbw": 2.083,
+      "mig_avgbw": 2.2447,
       "aoig_fault_coverage": 98.16,
       "mig_fault_coverage": 99.3
     },
@@ -158,10 +158,10 @@
       "circuit": "marx2_box",
       "family": "ARX",
       "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8618,
-      "aoig_to_mig_pct": -13.819999999999999,
-      "aoig_avgbw": 2.0029,
-      "mig_avgbw": 2.2174,
+      "mig_avgdp": 0.8616,
+      "aoig_to_mig_pct": -13.839999999999996,
+      "aoig_avgbw": 2.0052,
+      "mig_avgbw": 2.224,
       "aoig_fault_coverage": 97.96,
       "mig_fault_coverage": 99.3
     }
@@ -169,12 +169,12 @@
   "finding_1_observability_reduction": {
     "n_circuits": 15,
     "n_with_improvement": 13,
-    "mean_pct_change": -13.002954609069892,
-    "median_pct_change": -13.890000000000002,
+    "mean_pct_change": -12.99922647079671,
+    "median_pct_change": -13.870000000000005,
     "best_improvement": -23.68,
     "best_circuit": "prince_sbox",
-    "worst_improvement": 8.00432017280691,
-    "worst_circuit": "keccak_chi_5bit"
+    "worst_improvement": 8.017282765242435,
+    "worst_circuit": "keccak_chi_64row"
   },
   "finding_2_arx_vs_substitution": {
     "family_stats": {
@@ -187,10 +187,10 @@
       },
       "Subst. round": {
         "n": 3,
-        "mean": 1.1732,
-        "stdev": 0.24494178900302008,
+        "mean": 1.1732333333333334,
+        "stdev": 0.24498892945509917,
         "min": 1.0,
-        "max": 1.5196
+        "max": 1.5197
       },
       "Permutation": {
         "n": 1,
@@ -215,14 +215,14 @@
       },
       "ARX": {
         "n": 3,
-        "mean": 2.055833333333333,
-        "stdev": 0.24291334989159322,
-        "min": 1.7125,
-        "max": 2.2376
+        "mean": 2.0607,
+        "stdev": 0.2457235438455176,
+        "min": 1.7134,
+        "max": 2.2447
       }
     },
-    "arx_mean_avgbw": 2.055833333333333,
-    "subst_mean_avgbw": 1.0817285714285714,
-    "arx_over_subst_x": 1.9005075650524073
+    "arx_mean_avgbw": 2.0607,
+    "subst_mean_avgbw": 1.0817428571428571,
+    "arx_over_subst_x": 1.9049813792556987
   }
 }

@@ -5,6 +5,6 @@
   "fault_coverage": 99.31,
   "masking_rate": 0.69,
   "avg_breadth": 1.0,
-  "avg_det_prob": 0.889,
+  "avg_det_prob": 0.8891,
   "n_test_vectors": 10000
 }
