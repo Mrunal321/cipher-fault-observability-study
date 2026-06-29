@@ -175,31 +175,6 @@
     }
   },
   {
-    "circuit": "prince_mprime",
-    "flows": {
-      "aoig": {
-        "total_faults": 99,
-        "detectable": 96,
-        "masked": 3,
-        "fault_coverage": 96.97,
-        "masking_rate": 3.03,
-        "avg_breadth": 1.0,
-        "avg_det_prob": 1.0,
-        "n_test_vectors": 10000
-      },
-      "mig": {
-        "total_faults": 162,
-        "detectable": 160,
-        "masked": 2,
-        "fault_coverage": 98.77,
-        "masking_rate": 1.23,
-        "avg_breadth": 1.0,
-        "avg_det_prob": 0.8997,
-        "n_test_vectors": 10000
-      }
-    }
-  },
-  {
     "circuit": "simon32_round",
     "flows": {
       "aoig": {

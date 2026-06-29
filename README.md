@@ -12,7 +12,7 @@ The repository is meant to reproduce the paper's fault-observability experiments
 
 ## Main Results
 
-- The AOIG-to-MIG AvgDP reduction is baseline-dependent: AOIG to MIG gives a mean `-13.0%` change, while AIG to MIG gives a mean `+21.44%` change.
+- The AOIG-to-MIG AvgDP reduction is baseline-dependent: AOIG to MIG gives a mean `-13.21%` change, while AIG to MIG gives a mean `+21.54%` change.
 - Target-layer AvgDP is `1.000` across LUT/AOIG, AIG, and MIG for the evaluated circuits.
 - ARX primitives produce broader output corruption per detected fault than substitution-based primitives: `2.06` versus `1.08` output bits on average, ratio `1.90x`.
 - Synthetic MAJ-3/5/7 experiments show `18-62%` AvgDP reductions with higher arity in matched chains and trees.

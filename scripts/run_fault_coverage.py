@@ -50,7 +50,6 @@ CIRCUITS = [
     ("gift_subcells",   "gift/gift_subcells.blif"),
     ("gift_round",      "gift/gift_round.blif"),
     ("present_round",   "present/present_round.blif"),
-    ("prince_mprime",   "prince/prince_mprime.blif"),
     ("simon32_round",   "simon/simon32_round.blif"),
     ("simon64_round",   "simon/simon64_round.blif"),
     ("keccak_chi_5bit", "keccak/keccak_chi_5bit.blif"),

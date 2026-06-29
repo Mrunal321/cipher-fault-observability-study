@@ -4,7 +4,7 @@ analyze_results.py - Summarize the active fault-observability results.
 
   Finding 1: MIG synthesis reduces per-vector fault observability
              relative to the AOIG baseline. AvgDP drops by a mean of
-             13% from AOIG to MIG on 13/15 circuits because downstream
+             13.21% from AOIG to MIG on 12/14 circuits because downstream
              majority gates mask propagated faults on non-controlling
              input patterns.
 
@@ -38,7 +38,6 @@ FAMILY = {
     "gift_subcells":    "Subst. round",
     "gift_round":       "Subst. round",
     "present_round":    "Subst. round",
-    "prince_mprime":    "Permutation",
     "simon32_round":    "SIMON",
     "simon64_round":    "SIMON",
     "keccak_chi_5bit":  "Keccak chi",

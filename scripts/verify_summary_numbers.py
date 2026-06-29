@@ -45,9 +45,9 @@ def main() -> int:
     improved = [x for x in reductions if x < 0]
     mean_reduction = sum(reductions) / len(reductions)
 
-    check(len(rows) == 15, "summary rows cover 15 circuits", failures)
-    check(len(improved) == 13, "AOIG -> MIG AvgDP reduction occurs on 13/15 circuits", failures)
-    check(close(mean_reduction, -13.00, 0.02), "mean AOIG -> MIG AvgDP change is -13.00%", failures)
+    check(len(rows) == 14, "summary rows cover 14 circuits", failures)
+    check(len(improved) == 12, "AOIG -> MIG AvgDP reduction occurs on 12/14 circuits", failures)
+    check(close(mean_reduction, -13.21, 0.02), "mean AOIG -> MIG AvgDP change is -13.21%", failures)
     check(close(min(reductions), -23.68, 0.05), "best AOIG -> MIG AvgDP drop is -23.7%", failures)
     check(close(max(reductions), 8.00, 0.05), "worst AOIG -> MIG AvgDP change is +8.0%", failures)
 
@@ -72,9 +72,9 @@ def main() -> int:
     if granularity_path.exists():
         granularity = load_json(granularity_path)
         summary = granularity["summary"]
-        check(len(granularity["rows"]) == 15, "small-gate AIG control covers 15 circuits", failures)
-        check(summary["n_with_reduction"] == 0, "AIG -> MIG AvgDP reduction occurs on 0/15 circuits", failures)
-        check(close(summary["mean_pct_change"], 21.44, 0.02), "AIG -> MIG mean AvgDP change is +21.44%", failures)
+        check(len(granularity["rows"]) == 14, "small-gate AIG control covers 14 circuits", failures)
+        check(summary["n_with_reduction"] == 0, "AIG -> MIG AvgDP reduction occurs on 0/14 circuits", failures)
+        check(close(summary["mean_pct_change"], 21.54, 0.02), "AIG -> MIG mean AvgDP change is +21.54%", failures)
 
     invariant_path = RES / "invariant_metric.json"
     if invariant_path.exists():

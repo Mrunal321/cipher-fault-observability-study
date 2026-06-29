@@ -48,7 +48,7 @@ SEED = 42
 FAMILY = {
     "present_sbox": "Sbox", "gift_sbox": "Sbox", "prince_sbox": "Sbox",
     "prince_sbox_inv": "Sbox", "gift_subcells": "Subst", "gift_round": "Subst",
-    "present_round": "Subst", "prince_mprime": "Perm", "simon32_round": "SIMON",
+    "present_round": "Subst", "simon32_round": "SIMON",
     "simon64_round": "SIMON", "keccak_chi_5bit": "Keccak", "keccak_chi_64row": "Keccak",
     "speckey_box": "ARX", "speck32_round": "ARX", "marx2_box": "ARX",
 }

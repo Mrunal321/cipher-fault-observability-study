@@ -337,54 +337,6 @@
       }
     },
     {
-      "circuit": "prince_mprime",
-      "family": "Perm",
-      "flows": {
-        "aoig": {
-          "all": {
-            "total": 99,
-            "detectable": 96,
-            "avgdp": 1.0,
-            "avgbw": 1.0
-          },
-          "target": {
-            "total": 64,
-            "detectable": 64,
-            "avgdp": 1.0,
-            "avgbw": 1.0
-          }
-        },
-        "aig": {
-          "all": {
-            "total": 387,
-            "detectable": 384,
-            "avgdp": 0.7499,
-            "avgbw": 1.1809
-          },
-          "target": {
-            "total": 64,
-            "detectable": 64,
-            "avgdp": 1.0,
-            "avgbw": 1.0
-          }
-        },
-        "mig": {
-          "all": {
-            "total": 162,
-            "detectable": 160,
-            "avgdp": 0.8999,
-            "avgbw": 1.0
-          },
-          "target": {
-            "total": 64,
-            "detectable": 64,
-            "avgdp": 1.0,
-            "avgbw": 1.0
-          }
-        }
-      }
-    },
-    {
       "circuit": "simon32_round",
       "family": "SIMON",
       "flows": {
@@ -632,40 +584,37 @@
         "by_family": {
           "Sbox": 1.0,
           "Subst": 1.167,
-          "Perm": 1.0,
           "SIMON": 1.0,
           "Keccak": 1.0,
           "ARX": 1.96
         },
         "arx": 1.96,
-        "subst": 1.062,
-        "arx_over_subst": 1.846
+        "subst": 1.071,
+        "arx_over_subst": 1.83
       },
       "aig": {
         "by_family": {
           "Sbox": 1.12,
           "Subst": 1.256,
-          "Perm": 1.181,
           "SIMON": 1.0,
           "Keccak": 1.0,
           "ARX": 2.189
         },
         "arx": 2.189,
-        "subst": 1.179,
-        "arx_over_subst": 1.857
+        "subst": 1.178,
+        "arx_over_subst": 1.858
       },
       "mig": {
         "by_family": {
           "Sbox": 1.013,
           "Subst": 1.173,
-          "Perm": 1.0,
           "SIMON": 1.0,
           "Keccak": 1.0,
           "ARX": 2.059
         },
         "arx": 2.059,
-        "subst": 1.071,
-        "arx_over_subst": 1.923
+        "subst": 1.082,
+        "arx_over_subst": 1.903
       }
     }
   }

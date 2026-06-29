@@ -2,11 +2,11 @@
 """
 granularity_baseline.py - Small-gate AvgDP control for AOIG -> MIG.
 
-The AOIG-to-MIG AvgDP reduction (mean -13%) compares a Yosys
+The AOIG-to-MIG AvgDP reduction compares a Yosys
 LUT/truth-table "AOIG" netlist against a fully MAJ3-decomposed MIG netlist.
 In the LUT baseline each output bit is a *single* undecomposed node, so the
-only detectable fault sites are the output functions themselves -> dp = 1.0
-on 13/15 circuits by construction. The MIG average additionally includes many
+only detectable fault sites are the output functions themselves, so dp is often
+1.0 by construction. The MIG average additionally includes many
 interior MAJ3 nodes whose dp < 1. The reduction may therefore be a granularity
 (node-count / mix-shift) artifact rather than a property of majority logic.
 
@@ -140,15 +140,15 @@ def main() -> None:
         "n_circuits": len(rows),
         "n_with_reduction": n_red,
         "mean_pct_change": round(mean_d, 2),
-        "note": ("Compare against the LUT-baseline finding_1 mean of -13.0% "
-                 "(13/15 reduced). The gap that survives here is the part of "
+        "note": ("Compare against the LUT-baseline finding_1 mean reported in "
+                 "summary_metrics.json. The gap that survives here is the part of "
                  "the AvgDP effect not explained by synthesis granularity."),
     }
 
     print("-" * len(hdr))
     print(f"AIG->MIG: mean dp change = {mean_d:+.2f}%  "
           f"({n_red}/{len(rows)} circuits reduced)")
-    print(f"LUT->MIG comparison     = -13.00%  (13/15 reduced)")
+    print("LUT->MIG comparison     = see summary_metrics.json")
     print()
 
     out = OUT_DIR / "granularity_baseline.json"

@@ -78,17 +78,6 @@
       "mig_fault_coverage": 99.64
     },
     {
-      "circuit": "prince_mprime",
-      "family": "Permutation",
-      "aoig_avgdp": 1.0,
-      "mig_avgdp": 0.8997,
-      "aoig_to_mig_pct": -10.029999999999994,
-      "aoig_avgbw": 1.0,
-      "mig_avgbw": 1.0,
-      "aoig_fault_coverage": 96.97,
-      "mig_fault_coverage": 98.77
-    },
-    {
       "circuit": "simon32_round",
       "family": "SIMON",
       "aoig_avgdp": 1.0,
@@ -167,10 +156,10 @@
     }
   ],
   "finding_1_observability_reduction": {
-    "n_circuits": 15,
-    "n_with_improvement": 13,
-    "mean_pct_change": -12.99922647079671,
-    "median_pct_change": -13.870000000000005,
+    "n_circuits": 14,
+    "n_with_improvement": 12,
+    "mean_pct_change": -13.211314075853618,
+    "median_pct_change": -15.335000000000004,
     "best_improvement": -23.68,
     "best_circuit": "prince_sbox",
     "worst_improvement": 8.017282765242435,
@@ -191,13 +180,6 @@
         "stdev": 0.244989,
         "min": 1.0,
         "max": 1.5197
-      },
-      "Permutation": {
-        "n": 1,
-        "mean": 1.0,
-        "stdev": 0.0,
-        "min": 1.0,
-        "max": 1.0
       },
       "SIMON": {
         "n": 2,

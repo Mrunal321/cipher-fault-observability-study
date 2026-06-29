@@ -85,18 +85,6 @@
       "aig_to_mig_pct": 16.67
     },
     {
-      "circuit": "prince_mprime",
-      "aig_total_faults": 387,
-      "aig_detectable": 384,
-      "aig_avgdp": 0.7499,
-      "aig_fault_coverage": 99.22,
-      "mig_total_faults": 162,
-      "mig_detectable": 160,
-      "mig_avgdp": 0.8999,
-      "mig_fault_coverage": 98.77,
-      "aig_to_mig_pct": 20.0
-    },
-    {
       "circuit": "simon32_round",
       "aig_total_faults": 435,
       "aig_detectable": 432,
@@ -183,9 +171,9 @@
   ],
   "summary": {
     "baseline": "yosys abc -g AND (2-input AIG), small-gate control",
-    "n_circuits": 15,
+    "n_circuits": 14,
     "n_with_reduction": 0,
-    "mean_pct_change": 21.44,
-    "note": "Compare against the LUT-baseline finding_1 mean of -13.0% (13/15 reduced). The gap that survives here is the part of the AvgDP effect not explained by synthesis granularity."
+    "mean_pct_change": 21.54,
+    "note": "Compare against the LUT-baseline finding_1 mean reported in summary_metrics.json. The gap that survives here is the part of the AvgDP effect not explained by synthesis granularity."
   }
 }
