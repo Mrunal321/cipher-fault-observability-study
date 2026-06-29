@@ -1,6 +1,6 @@
 # Fault Observability in FPGA-Mapped Cipher Circuits Synthesized from AIG and MIG Representations
 
-This repository contains the code, input circuits, frozen experiment outputs, generated tables, and generated figures for a granularity-controlled fault-observability study on cipher circuits.
+This repository contains the code, input circuits, frozen experiment outputs, and verification scripts for a granularity-controlled fault-observability study on cipher circuits.
 
 The active study compares three gate-level representations:
 
@@ -23,9 +23,6 @@ The repository is meant to reproduce the paper's fault-observability experiments
 data/cipher_blif/          input BLIF circuits
 src/fault/dfa/             BLIF parser, simulator, and fault injection code
 scripts/                   experiment and summary scripts
-paper/figures/             generated paper figures
-paper/tables/              generated paper tables
-paper/tex/                 paper source used for the submitted manuscript
 results/fpga_benchmark/    frozen AOIG/AIG/MIG BLIFs and FPGA metric JSONs
 results/fault_coverage/    frozen fault-campaign JSONs
 vivado/                    optional Vivado metrics TCL
